@@ -11,10 +11,11 @@ RAIZ = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(RAIZ, "datos", "peliculas.json"), encoding="utf-8") as f:
     peliculas = json.load(f)
 
-datos = json.dumps(peliculas, ensure_ascii=False, separators=(",", ":"))
+# Solo ASCII (tildes como í): así el portapapeles o el editor no pueden estropear los textos.
+datos = json.dumps(peliculas, ensure_ascii=True, separators=(",", ":"))
 assert "$datos$" not in datos
 
-sql = f"""-- Carga inicial del videoclub ({len(peliculas)} películas). Pegar en SQL Editor → Run.
+sql = f"""-- Carga inicial del videoclub ({len(peliculas)} peliculas). Pegar en SQL Editor y pulsar Run.
 do $$
 begin
   if exists (select 1 from public.peliculas) then
@@ -39,4 +40,5 @@ select estado, count(*) from public.peliculas group by estado order by estado;
 salida = os.path.join(RAIZ, "supabase", "carga.sql")
 with open(salida, "w", encoding="utf-8") as f:
     f.write(sql)
+assert sql.isascii()
 print(f"{salida}: {len(peliculas)} películas, {len(sql) // 1024} KB")
