@@ -165,7 +165,10 @@ function filtradas() {
 const porRevisar = () => estado.peliculas.filter((p) => p.estado === "comprobar" || p.estado === "pendiente").length;
 
 function etiquetas(copias) {
-  return copias.map((c) => `<span class="formato" data-f="${esc(c.formato)}">${esc(c.formato || "¿?")}</span>`).join("");
+  const cuenta = new Map();
+  for (const c of copias) cuenta.set(c.formato || "¿?", (cuenta.get(c.formato || "¿?") || 0) + 1);
+  return [...cuenta].map(([f, n]) =>
+    `<span class="formato" data-f="${esc(f)}">${esc(f)}${n > 1 ? ` ×${n}` : ""}</span>`).join("");
 }
 
 function cartel(p, ancho = "w342") {
