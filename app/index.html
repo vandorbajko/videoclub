@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Videoclub</title>
+  <meta name="theme-color" content="#14161c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Videoclub">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icono.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icono-180.png">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="marca">
+      <h1>Videoclub</h1>
+      <span id="recuento" class="recuento"></span>
+    </div>
+    <div class="buscador">
+      <input id="busqueda" type="search" placeholder="¿La tenemos? Título, director, actor…"
+             autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="search">
+    </div>
+    <div class="filtros" id="filtros"></div>
+    <div class="filtros-2">
+      <select id="genero" aria-label="Género"><option value="">Todos los géneros</option></select>
+      <select id="orden" aria-label="Orden">
+        <option value="titulo">Por título</option>
+        <option value="anio-desc">Más recientes</option>
+        <option value="anio">Más antiguas</option>
+        <option value="creada">Últimas añadidas</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <p id="aviso" class="aviso" hidden></p>
+    <div id="rejilla" class="rejilla"></div>
+    <div id="vacio" class="vacio" hidden></div>
+  </main>
+
+  <footer class="pie">
+    <span id="estado-red"></span>
+    <button id="boton-sesion" class="enlace" type="button">Entrar</button>
+  </footer>
+
+  <button id="boton-anadir" class="flotante" type="button" hidden aria-label="Añadir película">+</button>
+
+  <dialog id="ficha" class="hoja"></dialog>
+  <dialog id="alta" class="hoja"></dialog>
+  <dialog id="entrar" class="hoja pequena">
+    <form id="form-entrar" method="dialog">
+      <h2>Entrar para editar</h2>
+      <label>Correo <input name="email" type="email" autocomplete="username" required></label>
+      <label>Contraseña <input name="password" type="password" autocomplete="current-password" required></label>
+      <p class="error" id="error-entrar"></p>
+      <div class="acciones">
+        <button type="button" class="secundario" data-cerrar>Cancelar</button>
+        <button type="submit" class="primario">Entrar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

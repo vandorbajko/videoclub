@@ -37,7 +37,8 @@
     "notas": "",
     "titulo_hoja": "Lady Halcón"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 562,
@@ -75,7 +76,8 @@
     "notas": "",
     "titulo_hoja": "Jungla de Cristal"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 2501,
@@ -114,7 +116,8 @@
     "notas": "Pack: La Trilogía de Bourne; Edición especial / Steelbook",
     "titulo_hoja": "La Trilogía de Bourne"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 2502,
@@ -152,7 +155,8 @@
     "notas": "Pack: La Trilogía de Bourne; Edición especial / Steelbook",
     "titulo_hoja": "La Trilogía de Bourne"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 2503,
@@ -193,7 +197,8 @@
     "notas": "Pack: La Trilogía de Bourne; Edición especial / Steelbook",
     "titulo_hoja": "La Trilogía de Bourne"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 40662,
@@ -232,7 +237,8 @@
     "notas": "",
     "titulo_hoja": "Batman (Capucha Roja?)"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 56590,
@@ -273,7 +279,8 @@
     "notas": "",
     "titulo_hoja": "All Star Superman"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9659,
@@ -312,7 +319,8 @@
     "notas": "",
     "titulo_hoja": "Mad Max"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9362,
@@ -351,7 +359,8 @@
     "notas": "",
     "titulo_hoja": "Temblores"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 137113,
@@ -390,7 +399,8 @@
     "notas": "",
     "titulo_hoja": "Al Filo del Mañana"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 74363,
@@ -428,7 +438,8 @@
     "notas": "",
     "titulo_hoja": "El maravilloso viaje de Nils Holgersson"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 22855,
@@ -469,7 +480,8 @@
     "notas": "",
     "titulo_hoja": "Superman / Batman: Enemigos Públicos"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1637,
@@ -505,7 +517,8 @@
     "notas": "",
     "titulo_hoja": "Speed"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 22,
@@ -546,7 +559,39 @@
     "titulo_hoja": "Piratas del Caribe"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 22,
+    "titulo": "Piratas del Caribe: La maldición de la Perla Negra",
+    "anio": 2003,
+    "caratula": "https://image.tmdb.org/t/p/w185/bVG48kmXuLaZYgPfSCmhs6EYFbX.jpg"
+   },
+   {
+    "tmdb_id": 63617,
+    "titulo": "Piratas del mar Caribe",
+    "anio": 1942,
+    "caratula": "https://image.tmdb.org/t/p/w185/p4M6IuLEXRVlHQtr5ICSjstl0hD.jpg"
+   },
+   {
+    "tmdb_id": 58,
+    "titulo": "Piratas del Caribe: El cofre del hombre muerto",
+    "anio": 2006,
+    "caratula": "https://image.tmdb.org/t/p/w185/7L7H6sHAt48EfwsqFaa0dw2NJhz.jpg"
+   },
+   {
+    "tmdb_id": 285,
+    "titulo": "Piratas del Caribe: En el fin del mundo",
+    "anio": 2007,
+    "caratula": "https://image.tmdb.org/t/p/w185/xHcUMez2b1QiMGQYCuQTAlqwDEe.jpg"
+   },
+   {
+    "tmdb_id": 1865,
+    "titulo": "Piratas del Caribe: En mareas misteriosas",
+    "anio": 2011,
+    "caratula": "https://image.tmdb.org/t/p/w185/2oOARbiV871kCC27FyKBmYwOM3G.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 11047,
@@ -587,7 +632,8 @@
     "notas": "",
     "titulo_hoja": "Astérix el Galo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 69871,
@@ -624,7 +670,8 @@
     "notas": "",
     "titulo_hoja": "Patoruzito"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 103269,
@@ -661,7 +708,8 @@
     "notas": "",
     "titulo_hoja": "Superman vs La Élite"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 37724,
@@ -701,7 +749,8 @@
     "notas": "",
     "titulo_hoja": "Skyfall 007"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 38142,
@@ -738,7 +787,8 @@
     "notas": "",
     "titulo_hoja": "5 centímetros por segundo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 3293,
@@ -776,7 +826,8 @@
     "notas": "",
     "titulo_hoja": "Piratas de Silicon Valley"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 40075,
@@ -813,7 +864,8 @@
     "notas": "",
     "titulo_hoja": "Ator el Poderoso"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 18647,
@@ -851,7 +903,8 @@
     "notas": "",
     "titulo_hoja": "El Rostro Impenetrable"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 79707,
@@ -889,7 +942,8 @@
     "notas": "",
     "titulo_hoja": "Viaje a Agartha"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 36955,
@@ -928,7 +982,8 @@
     "notas": "",
     "titulo_hoja": "Mentiras arriesgadas"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1408,
@@ -969,7 +1024,8 @@
     "notas": "",
     "titulo_hoja": "La isla de las cabezas cortadas"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 701743,
@@ -996,7 +1052,8 @@
     "notas": "",
     "titulo_hoja": "Anacondas"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9676,
@@ -1034,7 +1091,8 @@
     "notas": "",
     "titulo_hoja": "La Dalia Negra"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8452,
@@ -1072,7 +1130,8 @@
     "notas": "",
     "titulo_hoja": "El 6º Día"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9667,
@@ -1112,7 +1171,8 @@
     "notas": "",
     "titulo_hoja": "The Jacket"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 19053,
@@ -1150,7 +1210,21 @@
     "titulo_hoja": "Chica Valle"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 19053,
+    "titulo": "La chica del valle",
+    "anio": 1983,
+    "caratula": "https://image.tmdb.org/t/p/w185/lrVD0u477BZsg5Fp7gIFjZQBU24.jpg"
+   },
+   {
+    "tmdb_id": 482273,
+    "titulo": "La chica del valle",
+    "anio": 2020,
+    "caratula": "https://image.tmdb.org/t/p/w185/zMNChgTBBvBrmnDhjCKP0CtqoWv.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 17127,
@@ -1187,7 +1261,8 @@
     "notas": "",
     "titulo_hoja": "Mucho más que amigos"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 595,
@@ -1223,7 +1298,8 @@
     "notas": "",
     "titulo_hoja": "Matar a un ruiseñor"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 76330,
@@ -1257,7 +1333,8 @@
     "notas": "",
     "titulo_hoja": "Wild Man Blues"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9604,
@@ -1295,7 +1372,8 @@
     "notas": "",
     "titulo_hoja": "Danko: Calor rojo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11509,
@@ -1333,7 +1411,8 @@
     "notas": "",
     "titulo_hoja": "Silverado"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 847,
@@ -1371,7 +1450,8 @@
     "notas": "",
     "titulo_hoja": "Willow"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 21348,
@@ -1409,7 +1489,8 @@
     "notas": "",
     "titulo_hoja": "Kirikú y la bruja"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 3933,
@@ -1450,7 +1531,8 @@
     "notas": "",
     "titulo_hoja": "La Novia Cadáver"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 14749,
@@ -1489,7 +1571,8 @@
     "notas": "",
     "titulo_hoja": "Space Buddies"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 38575,
@@ -1528,7 +1611,8 @@
     "notas": "",
     "titulo_hoja": "Karate Kid"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 27738,
@@ -1566,7 +1650,8 @@
     "notas": "",
     "titulo_hoja": "Russkies"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10144,
@@ -1608,7 +1693,39 @@
     "titulo_hoja": "La Sirenita"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 10144,
+    "titulo": "La sirenita",
+    "anio": 1989,
+    "caratula": "https://image.tmdb.org/t/p/w185/Vc0KvO7z2OzEbRs6nyZs9xD81s.jpg"
+   },
+   {
+    "tmdb_id": 447277,
+    "titulo": "La sirenita",
+    "anio": 2023,
+    "caratula": "https://image.tmdb.org/t/p/w185/mdszPVnIY7cWgbgJ8zbwu1PiU5V.jpg"
+   },
+   {
+    "tmdb_id": 385448,
+    "titulo": "La Sirenita",
+    "anio": 2018,
+    "caratula": "https://image.tmdb.org/t/p/w185/qqHoJHiyEghxEl2XCmsgn1N9Lqh.jpg"
+   },
+   {
+    "tmdb_id": 215478,
+    "titulo": "La sirenita",
+    "anio": 1976,
+    "caratula": "https://image.tmdb.org/t/p/w185/944mAOy2kTvmyiVKxGeJXI7YdFs.jpg"
+   },
+   {
+    "tmdb_id": 116866,
+    "titulo": "La sirenita",
+    "anio": 1998,
+    "caratula": "https://image.tmdb.org/t/p/w185/qr25HC7LtnTHi3L4aWhpSHy05S4.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 11708,
@@ -1648,7 +1765,8 @@
     "notas": "",
     "titulo_hoja": "Chitty Chitty Bang Bang"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 433,
@@ -1688,7 +1806,8 @@
     "notas": "",
     "titulo_hoja": "Mary Poppins"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 13836,
@@ -1730,7 +1849,8 @@
     "notas": "",
     "titulo_hoja": "La montaña embrujada"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10874,
@@ -1771,7 +1891,8 @@
     "notas": "",
     "titulo_hoja": "Los Teleñecos en la Isla del Tesoro"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 812,
@@ -1815,7 +1936,39 @@
     "titulo_hoja": "Aladdin"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 812,
+    "titulo": "Aladdin",
+    "anio": 1992,
+    "caratula": "https://image.tmdb.org/t/p/w185/qiEpw4qjwYw82Qzme56UZwWJOAG.jpg"
+   },
+   {
+    "tmdb_id": 420817,
+    "titulo": "Aladdín",
+    "anio": 2019,
+    "caratula": "https://image.tmdb.org/t/p/w185/trnyoKkkvvjZvRvCMrNDtSf25nH.jpg"
+   },
+   {
+    "tmdb_id": 343693,
+    "titulo": "Aladdin (Aladino)",
+    "anio": 1992,
+    "caratula": "https://image.tmdb.org/t/p/w185/6NGjDdErVOmnoqLnjh0ouRfxerS.jpg"
+   },
+   {
+    "tmdb_id": 357528,
+    "titulo": "Aladdin",
+    "anio": 1992,
+    "caratula": "https://image.tmdb.org/t/p/w185/iYSvcS94KrI3I0GxXdPWUaUmQvw.jpg"
+   },
+   {
+    "tmdb_id": 1450246,
+    "titulo": "Aladdin",
+    "anio": 1967,
+    "caratula": "https://image.tmdb.org/t/p/w185/9D8oC83uTuBh1YRvjoP5h48Gpn2.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 9637,
@@ -1854,7 +2007,8 @@
     "notas": "",
     "titulo_hoja": "Scooby-Doo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 13,
@@ -1892,13 +2046,14 @@
     "notas": "",
     "titulo_hoja": "Forrest Gump"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": null,
   "titulo": "Título ilegible (Simbad?)",
   "anio": null,
-  "pendiente": true,
+  "estado": "pendiente",
   "copias": [
    {
     "formato": "DVD",
@@ -1943,7 +2098,8 @@
     "notas": "",
     "titulo_hoja": "Excalibur"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 621,
@@ -1982,7 +2138,8 @@
     "notas": "",
     "titulo_hoja": "Grease"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1092,
@@ -2018,7 +2175,8 @@
     "notas": "",
     "titulo_hoja": "El tercer hombre"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1607,
@@ -2054,7 +2212,8 @@
     "notas": "",
     "titulo_hoja": "Una historia del Bronx"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 77338,
@@ -2093,7 +2252,8 @@
     "notas": "",
     "titulo_hoja": "Intocables"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 3989,
@@ -2132,7 +2292,8 @@
     "notas": "",
     "titulo_hoja": "Team America: La policía del mundo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9928,
@@ -2173,7 +2334,8 @@
     "notas": "",
     "titulo_hoja": "Robots"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9397,
@@ -2219,7 +2381,39 @@
     "titulo_hoja": "Evolution"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 9397,
+    "titulo": "Evolution",
+    "anio": 2001,
+    "caratula": "https://image.tmdb.org/t/p/w185/9Rl38kO7rbfJB9Dtg7cZ6v536LR.jpg"
+   },
+   {
+    "tmdb_id": 1571101,
+    "titulo": "Evolution",
+    "anio": 2026,
+    "caratula": "https://image.tmdb.org/t/p/w185/vzkouNc5lH0RMRe0ZCEtFHDV2ms.jpg"
+   },
+   {
+    "tmdb_id": 323196,
+    "titulo": "Evolution",
+    "anio": 2014,
+    "caratula": "https://image.tmdb.org/t/p/w185/8CGPcqWpFJdp9SGRP8cOjPBR7EX.jpg"
+   },
+   {
+    "tmdb_id": 571891,
+    "titulo": "Pokémon: Mewtwo contraataca-Evolución",
+    "anio": 2019,
+    "caratula": "https://image.tmdb.org/t/p/w185/9w30rykSjSw9KVmESIxYuPBUj4l.jpg"
+   },
+   {
+    "tmdb_id": 836563,
+    "titulo": "Evolution",
+    "anio": 2021,
+    "caratula": "https://image.tmdb.org/t/p/w185/oxvF4fBDT9kyGLw1Gy6rrADUUo6.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 9038,
@@ -2259,7 +2453,8 @@
     "notas": "",
     "titulo_hoja": "Matrimonio Compulsivo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11635,
@@ -2296,7 +2491,8 @@
     "notas": "",
     "titulo_hoja": "Juergas Universitarias"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8873,
@@ -2334,7 +2530,8 @@
     "notas": "",
     "titulo_hoja": "Wayne's World 2"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1775,
@@ -2369,7 +2566,8 @@
     "notas": "",
     "titulo_hoja": "Canadian Bacon"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 15482,
@@ -2409,7 +2607,8 @@
     "notas": "",
     "titulo_hoja": "El retorno de los tomates asesinos"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1577,
@@ -2448,7 +2647,8 @@
     "notas": "",
     "titulo_hoja": "Resident Evil 2 (Apocalipsis)"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9334,
@@ -2487,7 +2687,8 @@
     "notas": "",
     "titulo_hoja": "El Rey Escorpión"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 4180,
@@ -2522,13 +2723,14 @@
     "notas": "",
     "titulo_hoja": "3 Solteros y un biberón"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": null,
   "titulo": "Título ilegible (Comedia familiar)",
   "anio": null,
-  "pendiente": true,
+  "estado": "pendiente",
   "copias": [
    {
     "formato": "DVD",
@@ -2555,7 +2757,8 @@
     "notas": "",
     "titulo_hoja": "Pavarotti Forever"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 652,
@@ -2592,13 +2795,14 @@
     "notas": "",
     "titulo_hoja": "Troya"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": null,
   "titulo": "Título ilegible (Oscura con rostros)",
   "anio": null,
-  "pendiente": true,
+  "estado": "pendiente",
   "copias": [
    {
     "formato": "DVD",
@@ -2649,7 +2853,8 @@
     "notas": "",
     "titulo_hoja": "Minority Report"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 34774,
@@ -2685,7 +2890,8 @@
     "notas": "",
     "titulo_hoja": "Los hijos del Capitán Grant"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 271280,
@@ -2717,7 +2923,39 @@
     "titulo_hoja": "Frank Sinatra"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 271280,
+    "titulo": "Sinatra desde el Madison Square Garden (The Main Event)",
+    "anio": 1974,
+    "caratula": "https://image.tmdb.org/t/p/w185/4kb40iMQ6VuZTilgA17myM606YM.jpg"
+   },
+   {
+    "tmdb_id": 447719,
+    "titulo": "Frank Sinatra Memorial",
+    "anio": 2000,
+    "caratula": "https://image.tmdb.org/t/p/w185/f2pOnoQm4oAlihC0xOUCIoBEltT.jpg"
+   },
+   {
+    "tmdb_id": 264824,
+    "titulo": "Frank Sinatra - Primetime",
+    "anio": 1968,
+    "caratula": "https://image.tmdb.org/t/p/w185/pdBsF5JtbiMAsU81gH9ooyI4aln.jpg"
+   },
+   {
+    "tmdb_id": 1049222,
+    "titulo": "Tony Bennett & Frank Sinatra",
+    "anio": 2019,
+    "caratula": "https://image.tmdb.org/t/p/w185/4ik9VOymGUbwcXRYqDVYeNbJWpY.jpg"
+   },
+   {
+    "tmdb_id": 730120,
+    "titulo": "Frank Sinatra Spectacular",
+    "anio": 1965,
+    "caratula": "https://image.tmdb.org/t/p/w185/svGE38aebQfPSgVu8rEL0QPiIi7.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 438631,
@@ -2762,7 +3000,39 @@
     "titulo_hoja": "Dune"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 438631,
+    "titulo": "Dune",
+    "anio": 2021,
+    "caratula": "https://image.tmdb.org/t/p/w185/szcew6yyjcDvaL0isaPBk2e3nkF.jpg"
+   },
+   {
+    "tmdb_id": 841,
+    "titulo": "Dune",
+    "anio": 1984,
+    "caratula": "https://image.tmdb.org/t/p/w185/sk4eTjGfp58RLRr67qzFUbX9EPl.jpg"
+   },
+   {
+    "tmdb_id": 697620,
+    "titulo": "Dűne",
+    "anio": 2020,
+    "caratula": "https://image.tmdb.org/t/p/w185/CecUPdnnP22wV1NoRFQaG231zj.jpg"
+   },
+   {
+    "tmdb_id": 271683,
+    "titulo": "La dune",
+    "anio": 2014,
+    "caratula": "https://image.tmdb.org/t/p/w185/qNnFzvRyXk0FkHOGuxS4jWqj1vO.jpg"
+   },
+   {
+    "tmdb_id": 881460,
+    "titulo": "Exoplaneta Dune en Peligro",
+    "anio": 2021,
+    "caratula": "https://image.tmdb.org/t/p/w185/6U3JjInVibVMThVp5YSrufAdSVX.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 2623,
@@ -2798,7 +3068,8 @@
     "notas": "",
     "titulo_hoja": "Oficial y Caballero"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10220,
@@ -2835,7 +3106,8 @@
     "notas": "",
     "titulo_hoja": "Rounders"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 99977,
@@ -2871,7 +3143,8 @@
     "notas": "",
     "titulo_hoja": "Materia Caliente"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11485,
@@ -2908,7 +3181,8 @@
     "notas": "",
     "titulo_hoja": "Toma el dinero y corre"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1633,
@@ -2945,7 +3219,8 @@
     "notas": "",
     "titulo_hoja": "Tomates Verdes Fritos"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 64686,
@@ -2989,7 +3264,8 @@
     "notas": "",
     "titulo_hoja": "La leyenda del samurái (47 Ronin)"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 5733,
@@ -3026,7 +3302,33 @@
     "titulo_hoja": "Scalps"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 5733,
+    "titulo": "Scalps (El cementerio indio)",
+    "anio": 1983,
+    "caratula": "https://image.tmdb.org/t/p/w185/zWAef4geukiEEiuD2Zi0UYi6Rif.jpg"
+   },
+   {
+    "tmdb_id": 114174,
+    "titulo": "¡Scalps! Venganza india",
+    "anio": 1987,
+    "caratula": "https://image.tmdb.org/t/p/w185/wWyB5s1d80AJQ4pv03WjGlFz2bG.jpg"
+   },
+   {
+    "tmdb_id": 32068,
+    "titulo": "El camino de la venganza",
+    "anio": 1968,
+    "caratula": "https://image.tmdb.org/t/p/w185/6kxwt8ukP4uJShypf6DPuTT6B4s.jpg"
+   },
+   {
+    "tmdb_id": 1693791,
+    "titulo": "Danny Dunn: Scalps Out!",
+    "anio": 2026,
+    "caratula": null
+   }
+  ]
  },
  {
   "tmdb_id": 15596,
@@ -3064,7 +3366,8 @@
     "notas": "",
     "titulo_hoja": "Regreso a la escuela"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 12123,
@@ -3104,7 +3407,8 @@
     "notas": "",
     "titulo_hoja": "Reacción en cadena"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 44645,
@@ -3139,7 +3443,8 @@
     "notas": "",
     "titulo_hoja": "La leyenda de Bruce Lee"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1576,
@@ -3177,7 +3482,8 @@
     "notas": "",
     "titulo_hoja": "Resident Evil"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9074,
@@ -3216,7 +3522,8 @@
     "notas": "",
     "titulo_hoja": "El Jefe"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8676,
@@ -3255,13 +3562,14 @@
     "notas": "",
     "titulo_hoja": "Como locos a por el oro"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": null,
   "titulo": "Título ilegible (DOG...)",
   "anio": null,
-  "pendiente": true,
+  "estado": "pendiente",
   "copias": [
    {
     "formato": "DVD",
@@ -3308,7 +3616,8 @@
     "notas": "",
     "titulo_hoja": "Lara Croft: Tomb Raider"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8273,
@@ -3344,7 +3653,8 @@
     "notas": "",
     "titulo_hoja": "American Pie: ¡Menuda Boda!"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 28692,
@@ -3381,7 +3691,8 @@
     "notas": "",
     "titulo_hoja": "Los Albóndigas en Remojo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10406,
@@ -3417,7 +3728,8 @@
     "notas": "",
     "titulo_hoja": "El hombre de California"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11678,
@@ -3455,7 +3767,8 @@
     "notas": "",
     "titulo_hoja": "Límite Vertical"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 26014,
@@ -3492,7 +3805,8 @@
     "notas": "",
     "titulo_hoja": "Consejera Matrimonial"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 956,
@@ -3532,7 +3846,8 @@
     "notas": "",
     "titulo_hoja": "Misión Imposible III"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 14405,
@@ -3572,7 +3887,27 @@
     "titulo_hoja": "Un Chihuahua en Beverly Hills"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 14405,
+    "titulo": "Un chihuahua en Beverly Hills",
+    "anio": 2008,
+    "caratula": "https://image.tmdb.org/t/p/w185/d2bIGAs9BI46UPyF6o1hrsBMEl8.jpg"
+   },
+   {
+    "tmdb_id": 54540,
+    "titulo": "Un chihuahua en Beverly Hills 2",
+    "anio": 2011,
+    "caratula": "https://image.tmdb.org/t/p/w185/1IWAjgqhcW6dqTen7eUCtyzYlwJ.jpg"
+   },
+   {
+    "tmdb_id": 105965,
+    "titulo": "Un chihuahua en Beverly Hills 3: ¡Que viva la fiesta!",
+    "anio": 2012,
+    "caratula": "https://image.tmdb.org/t/p/w185/mQEtAnfiMvBI9Sl2NZBTXzxoGB4.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 109445,
@@ -3614,7 +3949,8 @@
     "notas": "",
     "titulo_hoja": "Frozen"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 198375,
@@ -3651,7 +3987,8 @@
     "notas": "",
     "titulo_hoja": "El jardín de las palabras"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 38757,
@@ -3692,7 +4029,8 @@
     "notas": "",
     "titulo_hoja": "Enredados"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 454639,
@@ -3733,7 +4071,39 @@
     "titulo_hoja": "Masters of the Universe"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 454639,
+    "titulo": "He-Man y los Masters del Universo",
+    "anio": 2026,
+    "caratula": "https://image.tmdb.org/t/p/w185/A6kqScyPEsn6akDS5HyPf9jE4Od.jpg"
+   },
+   {
+    "tmdb_id": 11649,
+    "titulo": "Masters del universo",
+    "anio": 1987,
+    "caratula": "https://image.tmdb.org/t/p/w185/6UTNuS4WhpIPqRbEmj9QBRPIkCt.jpg"
+   },
+   {
+    "tmdb_id": 1138551,
+    "titulo": "Masters of the Musical Universe",
+    "anio": 2015,
+    "caratula": "https://image.tmdb.org/t/p/w185/iLsCPRRmjWU9jEDnUZKVAn3lWWy.jpg"
+   },
+   {
+    "tmdb_id": 1705074,
+    "titulo": "Behind the Legend of Masters of the Universe: The Motion Picture",
+    "anio": 1987,
+    "caratula": "https://image.tmdb.org/t/p/w185/7NuqgcpGI3nOR0YoaaTej7KgOzj.jpg"
+   },
+   {
+    "tmdb_id": 1138554,
+    "titulo": "Masters of the Musical Universe: Battle for Etheria",
+    "anio": 2016,
+    "caratula": "https://image.tmdb.org/t/p/w185/bUO40dxnVR4jKVod0BkHa4fdvRz.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 40095,
@@ -3772,7 +4142,8 @@
     "notas": "",
     "titulo_hoja": "Estamos muertos... ¿o qué?"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 20416,
@@ -3810,7 +4181,8 @@
     "notas": "",
     "titulo_hoja": "Abismo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 272,
@@ -3854,7 +4226,8 @@
     "notas": "",
     "titulo_hoja": "Batman Begins"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 24428,
@@ -3894,7 +4267,8 @@
     "notas": "",
     "titulo_hoja": "Los Vengadores 3D"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9100,
@@ -3933,7 +4307,21 @@
     "titulo_hoja": "Jóvenes y brujas"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 9100,
+    "titulo": "Jóvenes y brujas",
+    "anio": 1996,
+    "caratula": "https://image.tmdb.org/t/p/w185/zrevj9eXFr1ocxRVq4UEDXh48tK.jpg"
+   },
+   {
+    "tmdb_id": 590995,
+    "titulo": "Jóvenes y brujas",
+    "anio": 2020,
+    "caratula": "https://image.tmdb.org/t/p/w185/nPngRyZrEyHLoEtTC0fiv6ErAJr.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 4538,
@@ -3972,7 +4360,8 @@
     "notas": "",
     "titulo_hoja": "Viaje a Darjeeling"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 32856,
@@ -4010,7 +4399,8 @@
     "notas": "",
     "titulo_hoja": "Historias de San Valentín"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11971,
@@ -4049,7 +4439,21 @@
     "titulo_hoja": "Mucho ruido y pocas nueces"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 11971,
+    "titulo": "Mucho ruido y pocas nueces",
+    "anio": 1993,
+    "caratula": "https://image.tmdb.org/t/p/w185/uo4aje1fYyx4jkwwn05ZPPDvc7w.jpg"
+   },
+   {
+    "tmdb_id": 91739,
+    "titulo": "Mucho ruido y pocas nueces",
+    "anio": 2013,
+    "caratula": "https://image.tmdb.org/t/p/w185/2XQ1V2MbhnN6q4jLewnXwxzHy3A.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 157336,
@@ -4087,7 +4491,8 @@
     "notas": "",
     "titulo_hoja": "Interstellar"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 454,
@@ -4125,7 +4530,8 @@
     "notas": "",
     "titulo_hoja": "Romeo + Julieta"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 140607,
@@ -4165,7 +4571,8 @@
     "notas": "",
     "titulo_hoja": "Star Wars: El despertar de la Fuerza"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1266,
@@ -4205,7 +4612,8 @@
     "notas": "",
     "titulo_hoja": "Dueños de la calle"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 927,
@@ -4242,7 +4650,8 @@
     "notas": "",
     "titulo_hoja": "Gremlins"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 118,
@@ -4281,7 +4690,8 @@
     "notas": "",
     "titulo_hoja": "Charlie y la fábrica de chocolate"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 97,
@@ -4319,7 +4729,8 @@
     "notas": "",
     "titulo_hoja": "Tron"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 20526,
@@ -4359,7 +4770,8 @@
     "notas": "",
     "titulo_hoja": "Tron Legacy"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 13475,
@@ -4398,7 +4810,8 @@
     "notas": "",
     "titulo_hoja": "Star Trek"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 188927,
@@ -4437,7 +4850,8 @@
     "notas": "",
     "titulo_hoja": "Star Trek: Más allá 3D"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 155,
@@ -4482,7 +4896,8 @@
     "notas": "",
     "titulo_hoja": "El Caballero Oscuro"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8645,
@@ -4518,7 +4933,8 @@
     "notas": "",
     "titulo_hoja": "El Incidente"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 70981,
@@ -4558,7 +4974,8 @@
     "notas": "",
     "titulo_hoja": "Prometheus"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1273,
@@ -4603,7 +5020,8 @@
     "notas": "",
     "titulo_hoja": "TMNT"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 13509,
@@ -4643,7 +5061,8 @@
     "notas": "",
     "titulo_hoja": "Una Pandilla Alucinante"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9918,
@@ -4680,7 +5099,8 @@
     "notas": "",
     "titulo_hoja": "Camino a la Gloria"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 685677,
@@ -4708,7 +5128,39 @@
     "titulo_hoja": "El Milagro"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 685677,
+    "titulo": "El milagro",
+    "anio": 2003,
+    "caratula": "https://image.tmdb.org/t/p/w185/6bvmDDyMGNNhUTOKvEgj7NFUUXi.jpg"
+   },
+   {
+    "tmdb_id": 706584,
+    "titulo": "El milagro",
+    "anio": 2019,
+    "caratula": "https://image.tmdb.org/t/p/w185/sdipnXcj3sMBc0BI3zyfmxMKDia.jpg"
+   },
+   {
+    "tmdb_id": 1256995,
+    "titulo": "El Milagro",
+    "anio": 2024,
+    "caratula": "https://image.tmdb.org/t/p/w185/copyecfxSlDjCpG5ySS3C3z4379.jpg"
+   },
+   {
+    "tmdb_id": 1709557,
+    "titulo": "El milagro",
+    "anio": 2026,
+    "caratula": "https://image.tmdb.org/t/p/w185/vyj3z50rdOnjhILJSJh84kS3RqL.jpg"
+   },
+   {
+    "tmdb_id": 1501101,
+    "titulo": "El Milagro",
+    "anio": 2021,
+    "caratula": "https://image.tmdb.org/t/p/w185/vyOG4vOMZIatuKWeb51JxIDMDVy.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 8195,
@@ -4746,7 +5198,8 @@
     "notas": "",
     "titulo_hoja": "Ronin"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 236876,
@@ -4784,7 +5237,8 @@
     "notas": "",
     "titulo_hoja": "Animación Experimental (Osamu Tezuka)"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11360,
@@ -4829,7 +5283,39 @@
     "titulo_hoja": "Dumbo"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 11360,
+    "titulo": "Dumbo",
+    "anio": 1941,
+    "caratula": "https://image.tmdb.org/t/p/w185/xXBX2G5dc2WUZslcWuAXYKvYKoI.jpg"
+   },
+   {
+    "tmdb_id": 329996,
+    "titulo": "Dumbo",
+    "anio": 2019,
+    "caratula": "https://image.tmdb.org/t/p/w185/tLbijKcpZfFRgKTNs1HBWFrEGqp.jpg"
+   },
+   {
+    "tmdb_id": 99833,
+    "titulo": "Dumbom",
+    "anio": 1953,
+    "caratula": "https://image.tmdb.org/t/p/w185/cj5jlEZAjXIRP0QIvAxOQd6nfGY.jpg"
+   },
+   {
+    "tmdb_id": 1016369,
+    "titulo": "Dumbo 04",
+    "anio": 2006,
+    "caratula": "https://image.tmdb.org/t/p/w185/tnddKvxWlN6xjb7iDOjRTotrow1.jpg"
+   },
+   {
+    "tmdb_id": 524138,
+    "titulo": "Culinária Dumbo",
+    "anio": 2018,
+    "caratula": "https://image.tmdb.org/t/p/w185/uSbxnnZcz5HLu5wpaHZSWysBThG.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 10604,
@@ -4865,13 +5351,15 @@
     "notas": "",
     "titulo_hoja": "Zorba el Griego"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": null,
   "titulo": "La Fuga de Charlot",
   "anio": null,
-  "pendiente": true,
+  "estado": "pendiente",
+  "candidatos": [],
   "copias": [
    {
     "formato": "DVD",
@@ -4917,7 +5405,8 @@
     "notas": "",
     "titulo_hoja": "El Principiante"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10340,
@@ -4962,7 +5451,27 @@
     "titulo_hoja": "La Dama y el Vagabundo"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 10340,
+    "titulo": "La dama y el vagabundo",
+    "anio": 1955,
+    "caratula": "https://image.tmdb.org/t/p/w185/vHbizQYlkL8MwtOdsdWaPuR5N5w.jpg"
+   },
+   {
+    "tmdb_id": 512895,
+    "titulo": "La dama y el vagabundo",
+    "anio": 2019,
+    "caratula": "https://image.tmdb.org/t/p/w185/69f1DVUiK8e9Y1GhShe5Wx33vSe.jpg"
+   },
+   {
+    "tmdb_id": 18269,
+    "titulo": "La dama y el vagabundo 2: Las aventuras de Golfillo",
+    "anio": 2001,
+    "caratula": "https://image.tmdb.org/t/p/w185/wHVa5xmRD4r2RT4peQMSQqz1hNs.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 19877,
@@ -5002,7 +5511,39 @@
     "titulo_hoja": "El Puño de la Estrella del Norte"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 19877,
+    "titulo": "El puño de la Estrella del Norte",
+    "anio": 1986,
+    "caratula": "https://image.tmdb.org/t/p/w185/cNa034awM3fFIHcce5P8zPJjwPq.jpg"
+   },
+   {
+    "tmdb_id": 26300,
+    "titulo": "El puño de la estrella del norte",
+    "anio": 1995,
+    "caratula": "https://image.tmdb.org/t/p/w185/7oLUx2sLUJuaD8g8TCL4sY3k5xb.jpg"
+   },
+   {
+    "tmdb_id": 114372,
+    "titulo": "El Puño de la Estrella del Norte: La leyenda de Raoh - Capitulo de la lucha feroz",
+    "anio": 2007,
+    "caratula": "https://image.tmdb.org/t/p/w185/eQI4zxgXVj5wb6YGGmwauSPdvIp.jpg"
+   },
+   {
+    "tmdb_id": 120985,
+    "titulo": "New El puño de la estrella del norte: La ciudad maldita",
+    "anio": 2003,
+    "caratula": "https://image.tmdb.org/t/p/w185/wD3yaAjndBczVHKy0Oyl90smETu.jpg"
+   },
+   {
+    "tmdb_id": 247541,
+    "titulo": "New El puño de la estrella del norte: El puño prohibido",
+    "anio": 2003,
+    "caratula": "https://image.tmdb.org/t/p/w185/ev0XfGA3g5TVx7yEGYvHZLNXxDs.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 8265,
@@ -5042,7 +5583,27 @@
     "titulo_hoja": "Bienvenidos al Norte"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 8265,
+    "titulo": "Bienvenidos al Norte",
+    "anio": 2008,
+    "caratula": "https://image.tmdb.org/t/p/w185/dmANyZfkX1fSdcK7lF6H4vTDKRR.jpg"
+   },
+   {
+    "tmdb_id": 85038,
+    "titulo": "Bienvenidos al Norte",
+    "anio": 2012,
+    "caratula": "https://image.tmdb.org/t/p/w185/4diiuTdy1lCN1GU6fgg9aDOAH7J.jpg"
+   },
+   {
+    "tmdb_id": 367541,
+    "titulo": "Bienvenidos al Polo Norte",
+    "anio": 2015,
+    "caratula": "https://image.tmdb.org/t/p/w185/s0rhwbCxnWw640Q9aMwMvu2hd3I.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 9320,
@@ -5081,7 +5642,8 @@
     "notas": "",
     "titulo_hoja": "Los Vengadores"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8247,
@@ -5121,7 +5683,8 @@
     "notas": "",
     "titulo_hoja": "Jumper"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 20662,
@@ -5162,7 +5725,39 @@
     "titulo_hoja": "Robin Hood"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 20662,
+    "titulo": "Robin Hood",
+    "anio": 2010,
+    "caratula": "https://image.tmdb.org/t/p/w185/8jI4VDUWPVM4I91xBhObCLMQhnM.jpg"
+   },
+   {
+    "tmdb_id": 11886,
+    "titulo": "Robin Hood",
+    "anio": 1973,
+    "caratula": "https://image.tmdb.org/t/p/w185/49XBX5xwFrJVP1bQLJf4MFFOavZ.jpg"
+   },
+   {
+    "tmdb_id": 375588,
+    "titulo": "Robin Hood",
+    "anio": 2018,
+    "caratula": "https://image.tmdb.org/t/p/w185/tSxcUPAC1ihAtDpAQX2rydOucns.jpg"
+   },
+   {
+    "tmdb_id": 437442,
+    "titulo": "Robin Hood",
+    "anio": 1912,
+    "caratula": "https://image.tmdb.org/t/p/w185/fiXepjdsDCTGA10AiDBl1XCaeEm.jpg"
+   },
+   {
+    "tmdb_id": 30840,
+    "titulo": "Robin Hood el magnífico",
+    "anio": 1991,
+    "caratula": "https://image.tmdb.org/t/p/w185/5rDA3NsWZJbeMRvKE5ujKyI5ULC.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 31245,
@@ -5199,7 +5794,8 @@
     "notas": "",
     "titulo_hoja": "Hobgoblins"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11287,
@@ -5238,7 +5834,8 @@
     "notas": "",
     "titulo_hoja": "Ellas dan el golpe"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 708,
@@ -5277,7 +5874,8 @@
     "notas": "",
     "titulo_hoja": "007 Alta Tensión"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9874,
@@ -5315,7 +5913,8 @@
     "notas": "",
     "titulo_hoja": "Cobra, el brazo fuerte de la ley"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 40435,
@@ -5352,7 +5951,8 @@
     "notas": "",
     "titulo_hoja": "Infra-Man"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1542,
@@ -5387,7 +5987,8 @@
     "notas": "",
     "titulo_hoja": "Trabajo Basura"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 40771,
@@ -5424,7 +6025,8 @@
     "notas": "",
     "titulo_hoja": "Los Albóndigas atacan de nuevo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 39243,
@@ -5460,7 +6062,8 @@
     "notas": "",
     "titulo_hoja": "Policía por error"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 20242,
@@ -5495,7 +6098,8 @@
     "notas": "",
     "titulo_hoja": "Increíble suerte"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10134,
@@ -5533,7 +6137,8 @@
     "notas": "",
     "titulo_hoja": "Cyborg"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 82693,
@@ -5571,7 +6176,8 @@
     "notas": "",
     "titulo_hoja": "El lado bueno de las cosas"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1979,
@@ -5611,7 +6217,8 @@
     "notas": "",
     "titulo_hoja": "Los 4 Fantásticos y Silver Surfer"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 12155,
@@ -5651,7 +6258,39 @@
     "titulo_hoja": "Alicia en el país de las maravillas"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 12155,
+    "titulo": "Alicia en el País de las Maravillas",
+    "anio": 2010,
+    "caratula": "https://image.tmdb.org/t/p/w185/sqOyCSgzLglxcR2y1boewr5Qufn.jpg"
+   },
+   {
+    "tmdb_id": 12092,
+    "titulo": "Alicia en el país de las maravillas",
+    "anio": 1951,
+    "caratula": "https://image.tmdb.org/t/p/w185/zOJKtTdToc8FcjmmbavkjUxv2Ue.jpg"
+   },
+   {
+    "tmdb_id": 396929,
+    "titulo": "Alicia en el país de las maravillas",
+    "anio": 1976,
+    "caratula": "https://image.tmdb.org/t/p/w185/dCr9Ui8DPh9jqtB0GFRdj3HzTIw.jpg"
+   },
+   {
+    "tmdb_id": 25694,
+    "titulo": "Alicia en el país de las Maravillas",
+    "anio": 1933,
+    "caratula": "https://image.tmdb.org/t/p/w185/gRU1c4O7izCwjBkw9sG1f038WJT.jpg"
+   },
+   {
+    "tmdb_id": 35109,
+    "titulo": "Alicia en el País de las Maravillas",
+    "anio": 1966,
+    "caratula": "https://image.tmdb.org/t/p/w185/eeT2KNow160hdhV3WgbOhPkiqH6.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 632856,
@@ -5689,7 +6328,39 @@
     "titulo_hoja": "El espíritu de..."
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 632856,
+    "titulo": "El espíritu de la Navidad",
+    "anio": 2022,
+    "caratula": "https://image.tmdb.org/t/p/w185/v32IbOmBVViSq1dML1Tt8jV0uIY.jpg"
+   },
+   {
+    "tmdb_id": 894389,
+    "titulo": "El espíritu de la ley",
+    "anio": null,
+    "caratula": null
+   },
+   {
+    "tmdb_id": 4495,
+    "titulo": "El espíritu de la colmena",
+    "anio": 1973,
+    "caratula": "https://image.tmdb.org/t/p/w185/ueefcFKn9qoAQqjSWY6H9xjjLU2.jpg"
+   },
+   {
+    "tmdb_id": 472211,
+    "titulo": "Raza, el espíritu de Franco",
+    "anio": 1977,
+    "caratula": "https://image.tmdb.org/t/p/w185/50n9Usjh3upQObh4YcM38Mwi2C1.jpg"
+   },
+   {
+    "tmdb_id": 636055,
+    "titulo": "El espíritu de la pintura",
+    "anio": 2017,
+    "caratula": "https://image.tmdb.org/t/p/w185/4GomK5koV526mlmzKs2NuFynwhX.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 22049,
@@ -5726,7 +6397,8 @@
     "notas": "",
     "titulo_hoja": "Starcrash: Choque de galaxias"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 38742,
@@ -5762,7 +6434,8 @@
     "notas": "",
     "titulo_hoja": "Cops"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9955,
@@ -5801,7 +6474,8 @@
     "notas": "",
     "titulo_hoja": "Patinando a la gloria"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9476,
@@ -5839,7 +6513,8 @@
     "notas": "",
     "titulo_hoja": "Destino de caballero"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 14869,
@@ -5880,7 +6555,8 @@
     "notas": "",
     "titulo_hoja": "G.I. Joe"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 601,
@@ -5917,7 +6593,8 @@
     "notas": "",
     "titulo_hoja": "E.T. El Extraterrestre"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11904,
@@ -5955,7 +6632,8 @@
     "notas": "",
     "titulo_hoja": "El secreto de la pirámide"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10110,
@@ -5993,7 +6671,8 @@
     "notas": "",
     "titulo_hoja": "El imperio del sol"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 48490,
@@ -6032,7 +6711,8 @@
     "notas": "",
     "titulo_hoja": "Los nuevos bárbaros"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 26881,
@@ -6072,7 +6752,8 @@
     "notas": "",
     "titulo_hoja": "El Increíble Hulk: El retorno de la bestia"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 348,
@@ -6109,7 +6790,8 @@
     "notas": "Pack: Alien Quadrilogy",
     "titulo_hoja": "Alien Quadrilogy"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 679,
@@ -6149,7 +6831,8 @@
     "notas": "Pack: Alien Quadrilogy",
     "titulo_hoja": "Alien Quadrilogy"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8077,
@@ -6189,7 +6872,8 @@
     "notas": "Pack: Alien Quadrilogy",
     "titulo_hoja": "Alien Quadrilogy"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8078,
@@ -6228,7 +6912,8 @@
     "notas": "Pack: Alien Quadrilogy",
     "titulo_hoja": "Alien Quadrilogy"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8814,
@@ -6266,7 +6951,8 @@
     "notas": "",
     "titulo_hoja": "Doom"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 2577,
@@ -6303,7 +6989,8 @@
     "notas": "",
     "titulo_hoja": "Código 46"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 67221,
@@ -6342,7 +7029,8 @@
     "notas": "",
     "titulo_hoja": "Brazo de acero"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 60747,
@@ -6380,7 +7068,27 @@
     "titulo_hoja": "Amanecer rojo"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 60747,
+    "titulo": "Amanecer rojo",
+    "anio": 2012,
+    "caratula": "https://image.tmdb.org/t/p/w185/qY2yhcZ9KmpnPsluMLd6f309Nwa.jpg"
+   },
+   {
+    "tmdb_id": 1880,
+    "titulo": "Amanecer rojo",
+    "anio": 1984,
+    "caratula": "https://image.tmdb.org/t/p/w185/7Z1NgiJ3cq5tasdfKVuAmcJpXyK.jpg"
+   },
+   {
+    "tmdb_id": 47916,
+    "titulo": "Rojo Amanecer",
+    "anio": 1990,
+    "caratula": "https://image.tmdb.org/t/p/w185/e64pw9gmbQJik2H6C4buiX1ilB7.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 7012,
@@ -6417,7 +7125,8 @@
     "notas": "",
     "titulo_hoja": "El día después"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10999,
@@ -6461,7 +7170,8 @@
     "notas": "",
     "titulo_hoja": "Commando (Montaje del Director)"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9455,
@@ -6499,7 +7209,8 @@
     "notas": "",
     "titulo_hoja": "The Corruptor"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11702,
@@ -6536,7 +7247,8 @@
     "notas": "",
     "titulo_hoja": "Asesinos de reemplazo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 28415,
@@ -6575,7 +7287,8 @@
     "notas": "",
     "titulo_hoja": "Yakuza"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 73937,
@@ -6611,7 +7324,8 @@
     "notas": "",
     "titulo_hoja": "El Gran Año"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 13600,
@@ -6649,7 +7363,8 @@
     "notas": "",
     "titulo_hoja": "City of Ember"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 967,
@@ -6689,7 +7404,8 @@
     "notas": "",
     "titulo_hoja": "Espartaco"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9738,
@@ -6729,7 +7445,8 @@
     "notas": "",
     "titulo_hoja": "Los 4 Fantásticos"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 98,
@@ -6768,7 +7485,8 @@
     "notas": "",
     "titulo_hoja": "Gladiator"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1428543,
@@ -6796,7 +7514,8 @@
     "notas": "",
     "titulo_hoja": "X-Files"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 151368,
@@ -6833,7 +7552,8 @@
     "notas": "",
     "titulo_hoja": "Open Windows"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 576,
@@ -6870,7 +7590,8 @@
     "notas": "",
     "titulo_hoja": "Grupo Salvaje"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 873629,
@@ -6904,7 +7625,39 @@
     "titulo_hoja": "Freeman"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 873629,
+    "titulo": "Freeman",
+    "anio": 1977,
+    "caratula": "https://image.tmdb.org/t/p/w185/6nqKmQN79jghTtqb1EyAt5d7rfe.jpg"
+   },
+   {
+    "tmdb_id": 742296,
+    "titulo": "Freeman",
+    "anio": 2020,
+    "caratula": "https://image.tmdb.org/t/p/w185/A9ZKOveh1zInqAFbQ6UqgqEArzq.jpg"
+   },
+   {
+    "tmdb_id": 414201,
+    "titulo": "Freeman",
+    "anio": 2016,
+    "caratula": null
+   },
+   {
+    "tmdb_id": 1168560,
+    "titulo": "Mr. Freeman",
+    "anio": 2023,
+    "caratula": "https://image.tmdb.org/t/p/w185/blVfeEB5Ccr2L7Iz3TgzLDqtx7L.jpg"
+   },
+   {
+    "tmdb_id": 1484072,
+    "titulo": "Freeman Vines",
+    "anio": 2025,
+    "caratula": "https://image.tmdb.org/t/p/w185/pz9278peacH9w7eUcCJb9UVNjbX.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 9313,
@@ -6942,7 +7695,8 @@
     "notas": "",
     "titulo_hoja": "El Hombre de la Máscara de Hierro"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11817,
@@ -6980,7 +7734,8 @@
     "notas": "",
     "titulo_hoja": "El Monje"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8860,
@@ -7019,7 +7774,8 @@
     "notas": "",
     "titulo_hoja": "El Negociador"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11,
@@ -7056,7 +7812,8 @@
     "notas": "Pack: Star Wars trilogía original",
     "titulo_hoja": "Star Wars trilogía original"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1891,
@@ -7095,7 +7852,8 @@
     "notas": "Pack: Star Wars trilogía original",
     "titulo_hoja": "Star Wars trilogía original"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1892,
@@ -7135,7 +7893,8 @@
     "notas": "Pack: Star Wars trilogía original",
     "titulo_hoja": "Star Wars trilogía original"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 326,
@@ -7175,7 +7934,8 @@
     "notas": "",
     "titulo_hoja": "Serpientes en el avión"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8920,
@@ -7214,7 +7974,21 @@
     "titulo_hoja": "Garfield: La película"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 8920,
+    "titulo": "Garfield: La película",
+    "anio": 2004,
+    "caratula": "https://image.tmdb.org/t/p/w185/pMQKL3Dx40au9e172ARVUWsT4qH.jpg"
+   },
+   {
+    "tmdb_id": 748783,
+    "titulo": "Garfield: La película",
+    "anio": 2024,
+    "caratula": "https://image.tmdb.org/t/p/w185/tkdc73JiPVvzngSpbLEIfFNjll1.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 9513,
@@ -7253,7 +8027,8 @@
     "notas": "",
     "titulo_hoja": "Garfield 2"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 12599,
@@ -7293,7 +8068,8 @@
     "notas": "",
     "titulo_hoja": "Pokémon 2: El poder de uno"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 87469,
@@ -7330,7 +8106,8 @@
     "notas": "",
     "titulo_hoja": "Syngenor"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9872,
@@ -7367,7 +8144,8 @@
     "notas": "",
     "titulo_hoja": "Exploradores"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9267,
@@ -7405,7 +8183,8 @@
     "notas": "",
     "titulo_hoja": "Monty Python: Se armó la gorda"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 13526,
@@ -7444,7 +8223,8 @@
     "notas": "",
     "titulo_hoja": "El peso del agua"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 2022,
@@ -7482,7 +8262,8 @@
     "notas": "",
     "titulo_hoja": "Mr. Deeds"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 27380,
@@ -7522,7 +8303,8 @@
     "notas": "",
     "titulo_hoja": "Megaforce"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 644,
@@ -7561,7 +8343,8 @@
     "notas": "",
     "titulo_hoja": "A.I. Inteligencia Artificial"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11686,
@@ -7597,7 +8380,8 @@
     "notas": "",
     "titulo_hoja": "La última noche de Boris Grushenko"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 38842,
@@ -7635,7 +8419,8 @@
     "notas": "",
     "titulo_hoja": "Middle Men"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 773,
@@ -7672,7 +8457,8 @@
     "notas": "",
     "titulo_hoja": "Pequeña Miss Sunshine"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 2266,
@@ -7731,7 +8517,8 @@
     "notas": "",
     "titulo_hoja": "Paris, je t'aime"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 36133,
@@ -7769,7 +8556,39 @@
     "titulo_hoja": "Aquí un amigo"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 36133,
+    "titulo": "Aquí, un amigo",
+    "anio": 1981,
+    "caratula": "https://image.tmdb.org/t/p/w185/ktzHNigEp3gJ3OOrw0q0gtFcguM.jpg"
+   },
+   {
+    "tmdb_id": 1245728,
+    "titulo": "Aquí un amigo",
+    "anio": 2025,
+    "caratula": "https://image.tmdb.org/t/p/w185/qBXENnXSlkDlHY74jARAbuaMO7F.jpg"
+   },
+   {
+    "tmdb_id": 47943,
+    "titulo": "Harry, un amigo que os quiere",
+    "anio": 2000,
+    "caratula": "https://image.tmdb.org/t/p/w185/aLyguFdESjSE7nSFE6Ir7rIj3jk.jpg"
+   },
+   {
+    "tmdb_id": 209244,
+    "titulo": "¿Estás aquí?",
+    "anio": 2013,
+    "caratula": "https://image.tmdb.org/t/p/w185/ajudWnSJ3yjy5CPstRV7v0wmhDq.jpg"
+   },
+   {
+    "tmdb_id": 232572,
+    "titulo": "Un paseo por el bosque",
+    "anio": 2015,
+    "caratula": "https://image.tmdb.org/t/p/w185/w5wLafcCD4nNtQLKdQLg4rhynEt.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 534,
@@ -7809,7 +8628,8 @@
     "notas": "",
     "titulo_hoja": "Terminator Salvation"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11415,
@@ -7847,7 +8667,8 @@
     "notas": "",
     "titulo_hoja": "House, una casa alucinante"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 581,
@@ -7884,7 +8705,8 @@
     "notas": "",
     "titulo_hoja": "Bailando con lobos"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 2253,
@@ -7922,7 +8744,8 @@
     "notas": "",
     "titulo_hoja": "Valkiria"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11561,
@@ -7959,7 +8782,8 @@
     "notas": "",
     "titulo_hoja": "El dormilón"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 4291,
@@ -7995,7 +8819,8 @@
     "notas": "",
     "titulo_hoja": "El verano de Kikujiro"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1701,
@@ -8033,7 +8858,8 @@
     "notas": "",
     "titulo_hoja": "Con Air"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10081,
@@ -8071,7 +8897,8 @@
     "notas": "",
     "titulo_hoja": "El Rector"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9333,
@@ -8111,7 +8938,8 @@
     "notas": "",
     "titulo_hoja": "El último hombre"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11078,
@@ -8149,7 +8977,8 @@
     "notas": "",
     "titulo_hoja": "Seguridad Nacional"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 18305,
@@ -8189,7 +9018,8 @@
     "notas": "",
     "titulo_hoja": "Honor, plomo y sangre"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 2153,
@@ -8226,7 +9056,8 @@
     "notas": "",
     "titulo_hoja": "Driver"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8348,
@@ -8263,7 +9094,8 @@
     "notas": "",
     "titulo_hoja": "Un botín de 500.000 dólares"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 60670,
@@ -8301,7 +9133,8 @@
     "notas": "",
     "titulo_hoja": "Los Ríos de Color Púrpura"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9654,
@@ -8339,7 +9172,8 @@
     "notas": "",
     "titulo_hoja": "The Italian Job"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 57212,
@@ -8378,7 +9212,8 @@
     "notas": "",
     "titulo_hoja": "War Horse"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 247,
@@ -8417,7 +9252,8 @@
     "notas": "",
     "titulo_hoja": "Atraco Perfecto"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 12122,
@@ -8456,7 +9292,21 @@
     "titulo_hoja": "El Pueblo de los Malditos"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 12122,
+    "titulo": "El pueblo de los malditos",
+    "anio": 1995,
+    "caratula": "https://image.tmdb.org/t/p/w185/q0evLSmITF3I8dZKGSGXVviEA2O.jpg"
+   },
+   {
+    "tmdb_id": 11773,
+    "titulo": "El pueblo de los malditos",
+    "anio": 1960,
+    "caratula": "https://image.tmdb.org/t/p/w185/3B3C0tfOJRc59Qzszy7SAqRe4BG.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 8619,
@@ -8495,7 +9345,8 @@
     "notas": "",
     "titulo_hoja": "Master & Commander"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 987,
@@ -8533,7 +9384,8 @@
     "notas": "",
     "titulo_hoja": "Primera Plana"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 602,
@@ -8571,7 +9423,8 @@
     "notas": "",
     "titulo_hoja": "Independence Day"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 64688,
@@ -8612,7 +9465,8 @@
     "notas": "",
     "titulo_hoja": "Infiltrados en Clase / Universidad"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9470,
@@ -8653,7 +9507,8 @@
     "notas": "",
     "titulo_hoja": "Kung Fu Sión"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 525,
@@ -8691,7 +9546,8 @@
     "notas": "",
     "titulo_hoja": "The Blues Brothers"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 17768,
@@ -8731,7 +9587,8 @@
     "notas": "",
     "titulo_hoja": "Golfus de Roma"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 3172,
@@ -8767,7 +9624,8 @@
     "notas": "",
     "titulo_hoja": "Bandits"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 104364,
@@ -8803,7 +9661,8 @@
     "notas": "",
     "titulo_hoja": "Nickelodeon"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11059,
@@ -8842,7 +9701,39 @@
     "titulo_hoja": "House of the Dead"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 11059,
+    "titulo": "House of the Dead",
+    "anio": 2003,
+    "caratula": "https://image.tmdb.org/t/p/w185/diBiHcy9xZ6gIWt3AVtIjTYCukq.jpg"
+   },
+   {
+    "tmdb_id": 29293,
+    "titulo": "House of the Dead 2: El amanecer de los zombies",
+    "anio": 2006,
+    "caratula": "https://image.tmdb.org/t/p/w185/eRQFiaVMydyQiZM5FkP5WMX7ihG.jpg"
+   },
+   {
+    "tmdb_id": 77156,
+    "titulo": "La casa de la muerte",
+    "anio": 1978,
+    "caratula": "https://image.tmdb.org/t/p/w185/1CGmGV1Dwh26NeT4odmRziiTfDv.jpg"
+   },
+   {
+    "tmdb_id": 1380730,
+    "titulo": "The House of the Dead",
+    "anio": null,
+    "caratula": null
+   },
+   {
+    "tmdb_id": 309492,
+    "titulo": "From the House of the Dead",
+    "anio": 2007,
+    "caratula": "https://image.tmdb.org/t/p/w185/cPtOZwnH064C0BwYocOqh1ftr4w.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 5146,
@@ -8880,7 +9771,8 @@
     "notas": "",
     "titulo_hoja": "Hasta que la Muerte los Separe"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 4011,
@@ -8918,7 +9810,8 @@
     "notas": "",
     "titulo_hoja": "Bitelchús"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10136,
@@ -8955,7 +9848,8 @@
     "notas": "",
     "titulo_hoja": "El Chico de Oro"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9645,
@@ -8993,7 +9887,8 @@
     "notas": "",
     "titulo_hoja": "Ghost Ship"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 298,
@@ -9032,7 +9927,8 @@
     "notas": "",
     "titulo_hoja": "Ocean's 13"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10153,
@@ -9072,7 +9968,8 @@
     "notas": "",
     "titulo_hoja": "Sphere"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 197,
@@ -9110,7 +10007,8 @@
     "notas": "",
     "titulo_hoja": "Braveheart"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 786,
@@ -9146,7 +10044,8 @@
     "notas": "",
     "titulo_hoja": "Casi Famosos"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10720,
@@ -9183,7 +10082,8 @@
     "notas": "",
     "titulo_hoja": "Abajo el Amor"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 45162,
@@ -9223,7 +10123,8 @@
     "notas": "",
     "titulo_hoja": "Superman/Batman: Apocalypse"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 297762,
@@ -9263,7 +10164,8 @@
     "notas": "",
     "titulo_hoja": "Wonder Woman"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 6073,
@@ -9301,13 +10203,14 @@
     "notas": "",
     "titulo_hoja": "The Mexican"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": null,
   "titulo": "Título ilegible (Comedia)",
   "anio": null,
-  "pendiente": true,
+  "estado": "pendiente",
   "copias": [
    {
     "formato": "DVD",
@@ -9351,7 +10254,33 @@
     "titulo_hoja": "Este chico es un demonio"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 11077,
+    "titulo": "Este chico es un demonio",
+    "anio": 1990,
+    "caratula": "https://image.tmdb.org/t/p/w185/8wvEUjgtlKbrTJQG2xtzA7C4naE.jpg"
+   },
+   {
+    "tmdb_id": 28597,
+    "titulo": "Este chico es un demonio 2",
+    "anio": 1991,
+    "caratula": "https://image.tmdb.org/t/p/w185/sdu25FhRDZJA8xGGvIdQlcHa82m.jpg"
+   },
+   {
+    "tmdb_id": 28601,
+    "titulo": "Este chico es un demonio 3",
+    "anio": 1995,
+    "caratula": "https://image.tmdb.org/t/p/w185/tFidMbzYXZEmmn9RdJLkinmL0tB.jpg"
+   },
+   {
+    "tmdb_id": 49928,
+    "titulo": "Este chico es un demonio y su hermana también",
+    "anio": 1999,
+    "caratula": "https://image.tmdb.org/t/p/w185/bqT9BBO5F0nxFBXAwfWhNR7tNL1.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 7450,
@@ -9394,7 +10323,8 @@
     "notas": "",
     "titulo_hoja": "Titan A.E."
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11462,
@@ -9434,7 +10364,8 @@
     "notas": "",
     "titulo_hoja": "Sospecha"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11353,
@@ -9469,7 +10400,8 @@
     "notas": "",
     "titulo_hoja": "Bowfinger"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 508,
@@ -9507,7 +10439,8 @@
     "notas": "",
     "titulo_hoja": "Love Actually"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9988,
@@ -9545,7 +10478,8 @@
     "notas": "",
     "titulo_hoja": "La fiesta de la cerveza"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 755,
@@ -9583,7 +10517,8 @@
     "notas": "",
     "titulo_hoja": "Abierto hasta el amanecer"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1817,
@@ -9620,7 +10555,39 @@
     "titulo_hoja": "Última llamada"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 1817,
+    "titulo": "Última llamada",
+    "anio": 2003,
+    "caratula": "https://image.tmdb.org/t/p/w185/5NfIQnpdimdr6uXkB46YQUJnjLZ.jpg"
+   },
+   {
+    "tmdb_id": 379318,
+    "titulo": "Ultima llamada",
+    "anio": 1996,
+    "caratula": "https://image.tmdb.org/t/p/w185/7n8LAg3Gz6qfEVbVKp9Fgh7tRvo.jpg"
+   },
+   {
+    "tmdb_id": 1702719,
+    "titulo": "ULTIMA LLAMADA",
+    "anio": 2026,
+    "caratula": "https://image.tmdb.org/t/p/w185/gCKx2mN2XPL8WvsIBEfrG1I5YSv.jpg"
+   },
+   {
+    "tmdb_id": 158011,
+    "titulo": "La última llamada",
+    "anio": 2013,
+    "caratula": "https://image.tmdb.org/t/p/w185/jcIsEq5OsPjlaXEgBwU2tqr3T7r.jpg"
+   },
+   {
+    "tmdb_id": 27732,
+    "titulo": "Road House 2: La última llamada",
+    "anio": 2006,
+    "caratula": "https://image.tmdb.org/t/p/w185/BRcCTWZQUZcAaWUNZ0dMNTwTAH.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 2675,
@@ -9657,7 +10624,8 @@
     "notas": "",
     "titulo_hoja": "Señales"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 505026,
@@ -9696,7 +10664,21 @@
     "titulo_hoja": "Muerte en el Nilo"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 505026,
+    "titulo": "Muerte en el Nilo",
+    "anio": 2022,
+    "caratula": "https://image.tmdb.org/t/p/w185/4Fbl3qZSraPXdgmQQzQIDJA736N.jpg"
+   },
+   {
+    "tmdb_id": 4192,
+    "titulo": "Muerte en el Nilo",
+    "anio": 1978,
+    "caratula": "https://image.tmdb.org/t/p/w185/xNMrF4eRxaPV8wqf2udKxDVCH9C.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 362617,
@@ -9730,7 +10712,8 @@
     "notas": "",
     "titulo_hoja": "Novatos"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 13346,
@@ -9767,7 +10750,8 @@
     "notas": "",
     "titulo_hoja": "Lucas"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11088,
@@ -9805,7 +10789,8 @@
     "notas": "",
     "titulo_hoja": "El último golpe"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 6415,
@@ -9843,7 +10828,8 @@
     "notas": "",
     "titulo_hoja": "Tres reyes"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 6977,
@@ -9884,7 +10870,8 @@
     "notas": "",
     "titulo_hoja": "No es país para viejos"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 36914,
@@ -9922,7 +10909,8 @@
     "notas": "",
     "titulo_hoja": "De tal astilla, tal palo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 5890,
@@ -9959,7 +10947,8 @@
     "notas": "",
     "titulo_hoja": "Azumi 2"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11382,
@@ -9996,7 +10985,8 @@
     "notas": "",
     "titulo_hoja": "Balas sobre Broadway"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11846,
@@ -10035,7 +11025,8 @@
     "notas": "",
     "titulo_hoja": "El padre de la novia"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 59108,
@@ -10074,7 +11065,8 @@
     "notas": "",
     "titulo_hoja": "Un golpe de altura"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10022,
@@ -10112,7 +11104,8 @@
     "notas": "",
     "titulo_hoja": "Un canguro superduro"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 865,
@@ -10150,7 +11143,8 @@
     "notas": "",
     "titulo_hoja": "Perseguido"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 5503,
@@ -10189,7 +11183,8 @@
     "notas": "",
     "titulo_hoja": "El Fugitivo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9593,
@@ -10229,7 +11224,8 @@
     "notas": "",
     "titulo_hoja": "El Último Gran Héroe"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 57201,
@@ -10268,7 +11264,8 @@
     "notas": "",
     "titulo_hoja": "El Llanero Solitario"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 2157,
@@ -10306,7 +11303,8 @@
     "notas": "",
     "titulo_hoja": "Perdidos en el espacio"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 257344,
@@ -10347,7 +11345,8 @@
     "notas": "",
     "titulo_hoja": "Pixels"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11431,
@@ -10386,7 +11385,8 @@
     "notas": "",
     "titulo_hoja": "Amor en juego"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 6519,
@@ -10425,7 +11425,8 @@
     "notas": "",
     "titulo_hoja": "Dos chalados y muchas curvas"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 6951,
@@ -10467,7 +11468,8 @@
     "notas": "",
     "titulo_hoja": "Socios y sabuesos"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10970,
@@ -10505,7 +11507,8 @@
     "notas": "",
     "titulo_hoja": "La última locura"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 30723,
@@ -10541,7 +11544,8 @@
     "notas": "",
     "titulo_hoja": "Cavegirl"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 24833,
@@ -10581,7 +11585,8 @@
     "notas": "",
     "titulo_hoja": "Navidad con los Buddies"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11977,
@@ -10618,7 +11623,8 @@
     "notas": "",
     "titulo_hoja": "El club de los chalados"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 26817,
@@ -10657,7 +11663,8 @@
     "notas": "",
     "titulo_hoja": "La pícara soltera"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 813,
@@ -10698,7 +11705,21 @@
     "titulo_hoja": "¡Aterriza como puedas!"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 813,
+    "titulo": "Aterriza como puedas",
+    "anio": 1980,
+    "caratula": "https://image.tmdb.org/t/p/w185/5ZT6eyz8U3ZeefZh8CqqlOAv2VY.jpg"
+   },
+   {
+    "tmdb_id": 2665,
+    "titulo": "Aterriza como puedas 2",
+    "anio": 1982,
+    "caratula": "https://image.tmdb.org/t/p/w185/iVMZLNAdHTv94Skq8Q6mInbJxQa.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 7233,
@@ -10737,7 +11758,8 @@
     "notas": "",
     "titulo_hoja": "Rebote"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8427,
@@ -10778,7 +11800,8 @@
     "notas": "",
     "titulo_hoja": "Soy Espía"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10104,
@@ -10815,7 +11838,8 @@
     "notas": "",
     "titulo_hoja": "Desparrame a babor"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 10098,
@@ -10852,7 +11876,39 @@
     "titulo_hoja": "The Kid"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 10098,
+    "titulo": "El chico",
+    "anio": 1921,
+    "caratula": "https://image.tmdb.org/t/p/w185/we8AMv9ufyoXgmOlfX0SmubKOrd.jpg"
+   },
+   {
+    "tmdb_id": 4244,
+    "titulo": "The Kid (El chico)",
+    "anio": 2000,
+    "caratula": "https://image.tmdb.org/t/p/w185/fkfSJooU4fMhJzT3LKfzmC6CHqH.jpg"
+   },
+   {
+    "tmdb_id": 492565,
+    "titulo": "Sin piedad (The Kid)",
+    "anio": 2019,
+    "caratula": "https://image.tmdb.org/t/p/w185/5pcvDorwyuUNxbiSEt2urKUvKYI.jpg"
+   },
+   {
+    "tmdb_id": 38575,
+    "titulo": "Karate Kid",
+    "anio": 2010,
+    "caratula": "https://image.tmdb.org/t/p/w185/tHoASPhXRGJM6XFvDooJHIFcP3r.jpg"
+   },
+   {
+    "tmdb_id": 1885,
+    "titulo": "Karate Kid, el momento de la verdad",
+    "anio": 1984,
+    "caratula": "https://image.tmdb.org/t/p/w185/qupC1Jxss4YH5Y2ZeIB4XXokGcd.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 6037,
@@ -10889,7 +11945,8 @@
     "notas": "",
     "titulo_hoja": "Un cadáver a los postres"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9614,
@@ -10926,7 +11983,21 @@
     "titulo_hoja": "Terminagolf"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 9614,
+    "titulo": "Terminagolf",
+    "anio": 1996,
+    "caratula": "https://image.tmdb.org/t/p/w185/xkGHQdbvOm7PYNZoGUvIwSIMMcV.jpg"
+   },
+   {
+    "tmdb_id": 1263256,
+    "titulo": "Terminagolf 2",
+    "anio": 2025,
+    "caratula": "https://image.tmdb.org/t/p/w185/utIg6Vghn65A7rz8tH9ItHUuCzU.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 267193,
@@ -10964,7 +12035,8 @@
     "notas": "",
     "titulo_hoja": "Agente Contrainteligente"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 2779,
@@ -11001,7 +12073,8 @@
     "notas": "",
     "titulo_hoja": "La maldición del escorpión de jade"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11113,
@@ -11040,7 +12113,8 @@
     "notas": "",
     "titulo_hoja": "My Fair Lady"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8392,
@@ -11077,7 +12151,8 @@
     "notas": "",
     "titulo_hoja": "Mi Vecino Totoro"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 62,
@@ -11115,7 +12190,8 @@
     "notas": "",
     "titulo_hoja": "2001: Una odisea del espacio"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 12182,
@@ -11154,7 +12230,8 @@
     "notas": "",
     "titulo_hoja": "Nick & Norah"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 7326,
@@ -11191,7 +12268,8 @@
     "notas": "",
     "titulo_hoja": "Juno"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 90,
@@ -11230,7 +12308,33 @@
     "titulo_hoja": "Superdetective en Hollywood"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 90,
+    "titulo": "Superdetective en Hollywood",
+    "anio": 1984,
+    "caratula": "https://image.tmdb.org/t/p/w185/q8RtQuLStydGdJmHR4p8jNVssbv.jpg"
+   },
+   {
+    "tmdb_id": 96,
+    "titulo": "Superdetective en Hollywood II",
+    "anio": 1987,
+    "caratula": "https://image.tmdb.org/t/p/w185/19fU9cD8nBp3riUgKZi6nLSMO88.jpg"
+   },
+   {
+    "tmdb_id": 306,
+    "titulo": "Superdetective en Hollywood III",
+    "anio": 1994,
+    "caratula": "https://image.tmdb.org/t/p/w185/szhFPC5FXN6YHGMqWuqaGR7EKk8.jpg"
+   },
+   {
+    "tmdb_id": 280180,
+    "titulo": "Superdetective en Hollywood: Axel F.",
+    "anio": 2024,
+    "caratula": "https://image.tmdb.org/t/p/w185/3f28IXwRBEZjR75Pm4jCiBw3HZc.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 6957,
@@ -11267,7 +12371,8 @@
     "notas": "",
     "titulo_hoja": "Virgen a los 40"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 13640,
@@ -11309,7 +12414,8 @@
     "notas": "",
     "titulo_hoja": "Superman: Doomsday"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1571,
@@ -11348,7 +12454,8 @@
     "notas": "",
     "titulo_hoja": "La Jungla 4.0"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 169,
@@ -11386,7 +12493,8 @@
     "notas": "",
     "titulo_hoja": "Depredador 2"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 1669,
@@ -11424,7 +12532,8 @@
     "notas": "",
     "titulo_hoja": "La Caza del Octubre Rojo"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8363,
@@ -11460,7 +12569,8 @@
     "notas": "",
     "titulo_hoja": "Supersalidos"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 24918,
@@ -11498,7 +12608,8 @@
     "notas": "",
     "titulo_hoja": "El Misterio de las Doce Sillas"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 11352,
@@ -11538,7 +12649,8 @@
     "notas": "",
     "titulo_hoja": "Always"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 37924,
@@ -11576,7 +12688,8 @@
     "notas": "",
     "titulo_hoja": "Sweeney Todd"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 9870,
@@ -11613,7 +12726,8 @@
     "notas": "",
     "titulo_hoja": "Paso de ti"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 13851,
@@ -11661,7 +12775,8 @@
     "notas": "",
     "titulo_hoja": "Batman: Guardián de Gotham"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 49521,
@@ -11701,7 +12816,8 @@
     "notas": "",
     "titulo_hoja": "El Hombre de Acero"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 27578,
@@ -11740,7 +12856,39 @@
     "titulo_hoja": "Los Mercenarios"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 27578,
+    "titulo": "Los mercenarios",
+    "anio": 2010,
+    "caratula": "https://image.tmdb.org/t/p/w185/qiKXe4xbXnXdrhQXmXpZwG4Qlkv.jpg"
+   },
+   {
+    "tmdb_id": 678751,
+    "titulo": "Los mercenarios",
+    "anio": 1987,
+    "caratula": "https://image.tmdb.org/t/p/w185/8TVV4Ueej0fTURPXcLL2gaITmun.jpg"
+   },
+   {
+    "tmdb_id": 180150,
+    "titulo": "Los mercenarios",
+    "anio": 1961,
+    "caratula": "https://image.tmdb.org/t/p/w185/5pJKxRz7O8ODJYwxawrdMDieSwX.jpg"
+   },
+   {
+    "tmdb_id": 299054,
+    "titulo": "Los mercenarios 4",
+    "anio": 2023,
+    "caratula": "https://image.tmdb.org/t/p/w185/2qxRrkayxSYiib4JCYRM3sasQe0.jpg"
+   },
+   {
+    "tmdb_id": 76163,
+    "titulo": "Los mercenarios 2",
+    "anio": 2012,
+    "caratula": "https://image.tmdb.org/t/p/w185/nnx0puR1AvuYH4iAg0WHH1QcYzE.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 10803,
@@ -11778,7 +12926,8 @@
     "notas": "",
     "titulo_hoja": "La Fuga de Logan"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 4964,
@@ -11815,7 +12964,8 @@
     "notas": "",
     "titulo_hoja": "Lío Embarazoso"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 43641,
@@ -11856,7 +13006,8 @@
     "notas": "",
     "titulo_hoja": "Superman/Shazam!"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 207932,
@@ -11894,7 +13045,8 @@
     "notas": "",
     "titulo_hoja": "Inferno"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 33436,
@@ -11933,7 +13085,39 @@
     "titulo_hoja": "El Cerebro"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 33436,
+    "titulo": "El Cerebro",
+    "anio": 1969,
+    "caratula": "https://image.tmdb.org/t/p/w185/zu4tx1DVRN7X0UKFymetVBsRNjU.jpg"
+   },
+   {
+    "tmdb_id": 40222,
+    "titulo": "El cerebro",
+    "anio": 1988,
+    "caratula": "https://image.tmdb.org/t/p/w185/rw526kw4evoQKKhIF0hqNlhS8IJ.jpg"
+   },
+   {
+    "tmdb_id": 241076,
+    "titulo": "Santo contra el cerebro diabólico",
+    "anio": 1963,
+    "caratula": "https://image.tmdb.org/t/p/w185/rIbTRrkcR8uUSO477Dxo134YJC0.jpg"
+   },
+   {
+    "tmdb_id": 104183,
+    "titulo": "El Mal del Cerebro",
+    "anio": 2012,
+    "caratula": null
+   },
+   {
+    "tmdb_id": 1166632,
+    "titulo": "El cerebro de Caín",
+    "anio": 2011,
+    "caratula": "https://image.tmdb.org/t/p/w185/5XZb14t93Wdy4In11JdZt5ZoGFG.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 52451,
@@ -11973,7 +13157,39 @@
     "titulo_hoja": "Los Mosqueteros"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 52451,
+    "titulo": "Los tres mosqueteros",
+    "anio": 2011,
+    "caratula": "https://image.tmdb.org/t/p/w185/AuCJOLhSl3dsQ2DoRNuN1L9tVUF.jpg"
+   },
+   {
+    "tmdb_id": 82793,
+    "titulo": "Los Tres Mosqueteros",
+    "anio": 1942,
+    "caratula": "https://image.tmdb.org/t/p/w185/hLjpIN5HkFeW4sZZqThLvhCuWwK.jpg"
+   },
+   {
+    "tmdb_id": 10057,
+    "titulo": "Los tres mosqueteros",
+    "anio": 1993,
+    "caratula": "https://image.tmdb.org/t/p/w185/fCDO6GptlUwhe5D1YCHIaVPuhgF.jpg"
+   },
+   {
+    "tmdb_id": 545723,
+    "titulo": "Los Tres Mosqueteros",
+    "anio": 1946,
+    "caratula": "https://image.tmdb.org/t/p/w185/oOdZTT505O435S9jcW2kO2oN4KE.jpg"
+   },
+   {
+    "tmdb_id": 845111,
+    "titulo": "Los tres mosqueteros. Milady",
+    "anio": 2023,
+    "caratula": "https://image.tmdb.org/t/p/w185/cxttOyp3kVIuR86bUOLOcfkYpYN.jpg"
+   }
+  ]
  },
  {
   "tmdb_id": 10663,
@@ -12009,7 +13225,8 @@
     "notas": "",
     "titulo_hoja": "The Waterboy"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 8872,
@@ -12048,7 +13265,39 @@
     "titulo_hoja": "Wayne's World"
    }
   ],
-  "comprobar": true
+  "estado": "comprobar",
+  "candidatos": [
+   {
+    "tmdb_id": 8872,
+    "titulo": "Wayne's World: ¡Qué desparrame!",
+    "anio": 1992,
+    "caratula": "https://image.tmdb.org/t/p/w185/nQ75ReOwRAB8SNeMW0jFjyBcTNC.jpg"
+   },
+   {
+    "tmdb_id": 610176,
+    "titulo": "Wayne's World",
+    "anio": 2003,
+    "caratula": "https://image.tmdb.org/t/p/w185/m1R00BYSFPOA2Nv9O00jeP6o70I.jpg"
+   },
+   {
+    "tmdb_id": 8873,
+    "titulo": "Wayne's World 2: ¡Qué desparrame 2!",
+    "anio": 1993,
+    "caratula": "https://image.tmdb.org/t/p/w185/4TnW6Cf2zjxwy2IZYLGqRRWkSUN.jpg"
+   },
+   {
+    "tmdb_id": 1102356,
+    "titulo": "Wayne's World: Extreme Close-Up",
+    "anio": null,
+    "caratula": null
+   },
+   {
+    "tmdb_id": 1081982,
+    "titulo": "Wayne's World 2: Extreme Close-Up",
+    "anio": null,
+    "caratula": null
+   }
+  ]
  },
  {
   "tmdb_id": 9448,
@@ -12085,7 +13334,8 @@
     "notas": "",
     "titulo_hoja": "Equipo mortal"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 18886,
@@ -12123,7 +13373,8 @@
     "notas": "",
     "titulo_hoja": "El vuelo del Intruder"
    }
-  ]
+  ],
+  "estado": "ok"
  },
  {
   "tmdb_id": 18238,
@@ -12160,6 +13411,7 @@
     "notas": "",
     "titulo_hoja": "Lesbian Vampire Killers"
    }
-  ]
+  ],
+  "estado": "ok"
  }
 ]

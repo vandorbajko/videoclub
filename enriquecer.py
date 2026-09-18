@@ -212,6 +212,14 @@ def buscar_pack(titulo):
     return col.get("name"), [p["id"] for p in partes[:CUANTAS.get(palabra, len(partes))]]
 
 
+def resumir(candidatos):
+    """Lo justo para que la aplicación ofrezca las alternativas al revisar."""
+    return [{"tmdb_id": c["id"], "titulo": c.get("title"),
+             "anio": int(c["release_date"][:4]) if c.get("release_date") else None,
+             "caratula": f"https://image.tmdb.org/t/p/w185{c['poster_path']}" if c.get("poster_path") else None}
+            for c in candidatos]
+
+
 def ficha(tmdb_id):
     d = tmdb(f"/movie/{tmdb_id}", language="es-ES", append_to_response="credits")
     sinopsis = d.get("overview")
@@ -246,15 +254,17 @@ def main():
 
     peliculas, por_id, revisar = [], {}, []
 
-    def anadir(tmdb_id, copias_ficha, dudosa):
+    def anadir(tmdb_id, copias_ficha, dudosa, candidatos=()):
         if tmdb_id not in por_id:
             por_id[tmdb_id] = ficha(tmdb_id)
             por_id[tmdb_id]["copias"] = []
+            por_id[tmdb_id]["estado"] = "ok"
             peliculas.append(por_id[tmdb_id])
         p = por_id[tmdb_id]
         p["copias"].extend(copias_ficha)
         if dudosa:
-            p["comprobar"] = True
+            p["estado"] = "comprobar"
+            p["candidatos"] = resumir(candidatos)
         return p
 
     for n, ((clave_t, anio), grupo) in enumerate(grupos.items(), start=1):
@@ -268,7 +278,7 @@ def main():
         inedita = forzado == "manual" or any("inedit" in normalizar(c["notas"]) for c in grupo)
         if inedita:
             print("→ inédita (ficha manual)")
-            peliculas.append({"tmdb_id": None, "titulo": titulo, "anio": anio, "manual": True,
+            peliculas.append({"tmdb_id": None, "titulo": titulo, "anio": anio, "estado": "manual",
                               "copias": copias_ficha})
             continue
 
@@ -276,7 +286,7 @@ def main():
             print("→ ILEGIBLE")
             revisar.append({"estado": "ilegible", "titulo": titulo, "anio": "", "filas": filas,
                             "candidatos": ""})
-            peliculas.append({"tmdb_id": None, "titulo": titulo, "anio": anio, "pendiente": True,
+            peliculas.append({"tmdb_id": None, "titulo": titulo, "anio": anio, "estado": "pendiente",
                               "copias": copias_ficha})
             continue
 
@@ -301,12 +311,12 @@ def main():
                     for c in candidatos) or "sin resultados",
             })
         if not tmdb_id:
-            peliculas.append({"tmdb_id": None, "titulo": titulo, "anio": anio, "pendiente": True,
-                              "copias": copias_ficha})
+            peliculas.append({"tmdb_id": None, "titulo": titulo, "anio": anio, "estado": "pendiente",
+                              "candidatos": resumir(candidatos), "copias": copias_ficha})
             continue
 
         repetida = tmdb_id in por_id  # "Alien" y "Alien, el octavo pasajero" son la misma película
-        p = anadir(tmdb_id, copias_ficha, dudosa)
+        p = anadir(tmdb_id, copias_ficha, dudosa, candidatos)
         print(f"→ misma película que «{p['titulo']}»" if repetida else f"→ {p['titulo']} ({p['anio']})")
 
     with open(os.path.join(DATOS, "peliculas.json"), "w", encoding="utf-8") as f:
@@ -318,9 +328,9 @@ def main():
 
     encontradas = sum(1 for p in peliculas if p.get("tmdb_id"))
     print(f"\n{len(copias)} copias → {len(peliculas)} películas: "
-          f"{encontradas} con ficha ({sum(1 for p in peliculas if p.get('comprobar'))} dudosas), "
-          f"{sum(1 for p in peliculas if p.get('pendiente'))} sin elegir, "
-          f"{sum(1 for p in peliculas if p.get('manual'))} inéditas.")
+          f"{encontradas} con ficha ({sum(1 for p in peliculas if p.get('estado') == 'comprobar')} dudosas), "
+          f"{sum(1 for p in peliculas if p.get('estado') == 'pendiente')} sin elegir, "
+          f"{sum(1 for p in peliculas if p.get('estado') == 'manual')} inéditas.")
 
 
 if __name__ == "__main__":
