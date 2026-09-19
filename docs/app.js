@@ -33,8 +33,10 @@ function preparar(p) {
   p.director ??= [];
   p.guion ??= [];
   p.reparto ??= [];
-  p._b = normalizar([p.titulo, p.titulo_original, p.anio, ...p.director, ...p.reparto,
-    ...p.copias.map((c) => c.titulo_hoja)].join(" "));
+  p.tipo ??= "pelicula";
+  p._b = normalizar([p.titulo, p.titulo_original, p.anio, p.tipo === "serie" ? "serie" : "",
+    ...p.director, ...p.reparto,
+    ...p.copias.flatMap((c) => [c.titulo_hoja, c.notas, c.nota_interna])].join(" "));
   return p;
 }
 
@@ -112,33 +114,48 @@ async function tmdb(ruta, params = {}) {
 
 const unicos = (xs) => [...new Set(xs)];
 
-async function fichaTmdb(id) {
-  const d = await tmdb(`/movie/${id}`, { append_to_response: "credits" });
-  let sinopsis = d.overview;
-  if (!sinopsis) sinopsis = (await tmdb(`/movie/${id}`, { language: "en-US" })).overview;
+// Películas y series comparten numeración en TMDB: se identifican por «tipo:id».
+const clave = (tipo, id) => `${tipo || "pelicula"}:${id}`;
+const partir = (k) => { const [tipo, id] = k.split(":"); return [tipo, Number(id)]; };
+const buscarPorClave = (k, salvo) => estado.peliculas.find((p) => p.tmdb_id && clave(p.tipo, p.tmdb_id) === k && p.id !== salvo);
+const ano = (fecha) => (fecha ? Number(fecha.slice(0, 4)) : null);
+
+async function fichaTmdb(tipo, id) {
+  const ruta = tipo === "serie" ? `/tv/${id}` : `/movie/${id}`;
+  const d = await tmdb(ruta, { append_to_response: tipo === "serie" ? "aggregate_credits" : "credits" });
+  const sinopsis = d.overview || (await tmdb(ruta, { language: "en-US" })).overview;
+  const imagen = d.poster_path ? `https://image.tmdb.org/t/p/w500${d.poster_path}` : null;
+  if (tipo === "serie") {
+    return {
+      tipo, tmdb_id: d.id, titulo: d.name, titulo_original: d.original_name,
+      anio: ano(d.first_air_date), duracion: d.episode_run_time?.[0] || null,
+      generos: (d.genres ?? []).map((g) => g.name),
+      director: unicos((d.created_by ?? []).map((p) => p.name)),
+      guion: [],
+      reparto: (d.aggregate_credits?.cast ?? []).slice(0, 8).map((p) => p.name),
+      sinopsis: sinopsis || null, caratula: imagen,
+    };
+  }
   const equipo = d.credits?.crew ?? [];
   return {
-    tmdb_id: d.id,
-    titulo: d.title,
-    titulo_original: d.original_title,
-    anio: d.release_date ? Number(d.release_date.slice(0, 4)) : null,
-    duracion: d.runtime || null,
+    tipo, tmdb_id: d.id, titulo: d.title, titulo_original: d.original_title,
+    anio: ano(d.release_date), duracion: d.runtime || null,
     generos: (d.genres ?? []).map((g) => g.name),
     director: unicos(equipo.filter((p) => p.job === "Director").map((p) => p.name)),
     guion: unicos(equipo.filter((p) => p.department === "Writing").map((p) => p.name)).slice(0, 4),
     reparto: (d.credits?.cast ?? []).slice(0, 8).map((p) => p.name),
-    sinopsis: sinopsis || null,
-    caratula: d.poster_path ? `https://image.tmdb.org/t/p/w500${d.poster_path}` : null,
+    sinopsis: sinopsis || null, caratula: imagen,
   };
 }
 
 async function buscarTmdb(texto) {
-  const { results } = await tmdb("/search/movie", { query: texto });
-  return results.slice(0, 12).map((c) => ({
+  const { results } = await tmdb("/search/multi", { query: texto });
+  return results.filter((c) => c.media_type === "movie" || c.media_type === "tv").slice(0, 12).map((c) => ({
+    tipo: c.media_type === "tv" ? "serie" : "pelicula",
     tmdb_id: c.id,
-    titulo: c.title,
-    titulo_original: c.original_title,
-    anio: c.release_date ? Number(c.release_date.slice(0, 4)) : null,
+    titulo: c.title || c.name,
+    titulo_original: c.original_title || c.original_name,
+    anio: ano(c.release_date || c.first_air_date),
     caratula: c.poster_path ? `https://image.tmdb.org/t/p/w185${c.poster_path}` : null,
   }));
 }
@@ -202,14 +219,15 @@ function pintar() {
   const lista = filtradas();
   const copias = estado.peliculas.reduce((n, p) => n + p.copias.length, 0);
   $("#recuento").textContent = estado.peliculas.length
-    ? `${estado.peliculas.length} películas · ${copias} copias` : "";
+    ? `${estado.peliculas.length} títulos · ${copias} copias` : "";
   pintarFiltros();
 
   $("#rejilla").innerHTML = lista.map((p) => `
     <button type="button" class="tarjeta" data-id="${p.id}">
       ${cartel(p)}
       <div class="titulo">${esc(p.titulo)}</div>
-      <div class="meta">${p.anio ? `<span>${p.anio}</span>` : ""}${etiquetas(p.copias)}</div>
+      <div class="meta">${p.anio ? `<span>${p.anio}</span>` : ""}${
+        p.tipo === "serie" ? `<span class="etiqueta-serie">Serie</span>` : ""}${etiquetas(p.copias)}</div>
     </button>`).join("");
 
   const vacio = $("#vacio");
@@ -258,21 +276,29 @@ function opcionesFormato(elegido) {
 }
 
 function resultadosHtml(resultados, excluir) {
-  const tengo = new Set(estado.peliculas.map((p) => p.tmdb_id));
-  return resultados.filter((r) => r.tmdb_id !== excluir).map((r) => `
-    <button type="button" class="resultado" data-tmdb="${r.tmdb_id}">
+  const tengo = new Set(estado.peliculas.filter((p) => p.tmdb_id).map((p) => clave(p.tipo, p.tmdb_id)));
+  return resultados.filter((r) => clave(r.tipo, r.tmdb_id) !== excluir).map((r) => `
+    <button type="button" class="resultado" data-tmdb="${clave(r.tipo, r.tmdb_id)}">
       ${r.caratula ? `<img loading="lazy" alt="" src="${esc(r.caratula)}">` : `<span class="hueco"></span>`}
       <span><strong>${esc(r.titulo)}</strong> ${r.anio ? `(${r.anio})` : ""}
+        ${r.tipo === "serie" ? `<span class="etiqueta-serie">Serie</span>` : ""}
         ${r.titulo_original && r.titulo_original !== r.titulo ? `<br><span class="nota-pequena">${esc(r.titulo_original)}</span>` : ""}
-        ${tengo.has(r.tmdb_id) ? `<br><span class="ya">Ya la tienes</span>` : ""}</span>
+        ${tengo.has(clave(r.tipo, r.tmdb_id)) ? `<br><span class="ya">Ya la tienes</span>` : ""}</span>
     </button>`).join("") || `<p class="nota-pequena">Sin resultados.</p>`;
 }
 
 function abrirFicha(p) {
   const d = $("#ficha");
   const admin = !!estado.sesion;
+  const serie = p.tipo === "serie";
   const dudosa = p.estado === "comprobar" || p.estado === "pendiente";
-  const duracion = p.duracion ? `${Math.floor(p.duracion / 60)} h ${p.duracion % 60} min` : "";
+  const duracion = !p.duracion ? ""
+    : serie ? `${p.duracion} min por episodio`
+    : `${Math.floor(p.duracion / 60)} h ${p.duracion % 60} min`;
+  // Notas públicas al final; con copias de notas distintas, cada una lleva su formato delante.
+  const conNota = p.copias.filter((c) => c.notas);
+  const variasNotas = new Set(conNota.map((c) => c.notas)).size > 1;
+  const notasPublicas = unicos(conNota.map((c) => (variasNotas ? `${c.formato}: ${c.notas}` : c.notas)));
 
   d.innerHTML = `
     <button type="button" class="cerrar" data-cerrar aria-label="Cerrar">×</button>
@@ -282,7 +308,7 @@ function abrirFicha(p) {
         <div class="datos">
           <h2>${esc(p.titulo)}</h2>
           ${p.titulo_original && p.titulo_original !== p.titulo ? `<p class="original">${esc(p.titulo_original)}</p>` : ""}
-          <p class="linea">${[p.anio, duracion].filter(Boolean).join(" · ")}</p>
+          <p class="linea">${[serie ? "Serie" : "", p.anio, duracion].filter(Boolean).join(" · ")}</p>
           <p class="linea">${esc(p.generos.join(", "))}</p>
           <div class="meta" style="margin-top:8px">${etiquetas(p.copias)}</div>
         </div>
@@ -290,43 +316,48 @@ function abrirFicha(p) {
 
       ${admin && dudosa ? `<div class="caja-aviso">
           <p>${p.estado === "pendiente"
-            ? "Esta película no tiene ficha todavía. Elige cuál es:"
-            : "Hay varias películas con este título. ¿Es esta la tuya?"}</p>
+            ? "Todavía no tiene ficha. Elige cuál es:"
+            : "Hay varias con este título. ¿Es esta la tuya?"}</p>
           ${p.tmdb_id ? `<button type="button" class="primario mini" data-correcta>Sí, es esta</button>` : ""}
-          <div class="resultados">${resultadosHtml(p.candidatos ?? [], p.tmdb_id)}</div>
+          <div class="resultados">${resultadosHtml(p.candidatos ?? [], p.tmdb_id ? clave(p.tipo, p.tmdb_id) : "")}</div>
         </div>` : ""}
 
       ${p.sinopsis ? `<p class="sinopsis">${esc(p.sinopsis)}</p>` : ""}
-      ${lista("Dirección", p.director)}
+      ${lista(serie ? "Creada por" : "Dirección", p.director)}
       ${lista("Guion", p.guion)}
       ${lista("Reparto", p.reparto)}
 
       <h3>Copias</h3>
       <ul class="copias">${p.copias.map((c, i) => `
         <li><span class="formato" data-f="${esc(c.formato)}">${esc(c.formato || "¿?")}</span>
-          <span class="notas">${esc(c.notas || "")}${
-            c.titulo_hoja && normalizar(c.titulo_hoja) !== normalizar(p.titulo)
-              ? `${c.notas ? " · " : ""}«${esc(c.titulo_hoja)}»` : ""}</span>
+          <span class="notas">
+            ${admin && c.nota_interna ? `<span class="interna">${esc(c.nota_interna)}</span>` : ""}
+            ${admin && c.titulo_hoja && normalizar(c.titulo_hoja) !== normalizar(p.titulo)
+              ? `<span class="interna">En la hoja: «${esc(c.titulo_hoja)}»</span>` : ""}</span>
           ${admin ? `<button type="button" class="peligro mini" data-quitar-copia="${i}">Quitar</button>` : ""}
         </li>`).join("")}</ul>
 
+      ${notasPublicas.length ? `<h3>Notas</h3>${notasPublicas.map((n) => `<p class="nota-final">${esc(n)}</p>`).join("")}` : ""}
+
       ${admin ? `
-        <div class="fila-copia" style="margin-top:10px">
+        <h3>Añadir copia</h3>
+        <div class="fila-copia">
           <select id="nueva-copia-formato" aria-label="Formato">${opcionesFormato(leerLocal(CLAVE_FORMATO) || "DVD")}</select>
-          <input id="nueva-copia-notas" placeholder="Notas (edición, ubicación…)" style="margin:0">
+          <input id="nueva-copia-notas" placeholder="Notas (edición…)" style="margin:0">
         </div>
+        <input id="nueva-copia-interna" placeholder="Nota interna (solo la ves tú)" style="margin-top:8px">
         <div class="acciones" style="margin-top:8px">
           <button type="button" class="secundario mini" data-anadir-copia>Añadir copia</button>
         </div>
 
         <h3>Corregir</h3>
         <div class="fila-copia">
-          <input id="corregir-texto" type="search" placeholder="Buscar la película correcta" value="${esc(p.titulo)}" style="margin:0">
+          <input id="corregir-texto" type="search" placeholder="Buscar la correcta" value="${esc(p.titulo)}" style="margin:0">
           <button type="button" class="secundario mini" data-corregir-buscar>Buscar</button>
         </div>
         <div class="resultados" id="corregir-resultados"></div>
         <div class="acciones">
-          <button type="button" class="peligro" data-eliminar>Eliminar película</button>
+          <button type="button" class="peligro" data-eliminar>Eliminar del videoclub</button>
         </div>
         <p class="error" id="error-ficha"></p>` : ""}
     </div>`;
@@ -340,7 +371,7 @@ function abrirFicha(p) {
       if (b.hasAttribute("data-correcta")) {
         abrirFicha(await actualizar(p, { estado: "ok", candidatos: [] }));
       } else if (b.dataset.tmdb) {
-        await cambiarPelicula(p, Number(b.dataset.tmdb));
+        await cambiarPelicula(p, b.dataset.tmdb);
       } else if (b.hasAttribute("data-quitar-copia")) {
         if (p.copias.length === 1) {
           if (confirm(`Es la única copia. ¿Eliminar «${p.titulo}» del videoclub?`)) await eliminar(p);
@@ -351,10 +382,12 @@ function abrirFicha(p) {
       } else if (b.hasAttribute("data-anadir-copia")) {
         const formato = $("#nueva-copia-formato", d).value;
         guardarLocal(CLAVE_FORMATO, formato);
-        const copias = [...p.copias, { formato, notas: $("#nueva-copia-notas", d).value.trim() }];
-        abrirFicha(await actualizar(p, { copias }));
+        const copia = { formato, notas: $("#nueva-copia-notas", d).value.trim(),
+                        nota_interna: $("#nueva-copia-interna", d).value.trim() };
+        abrirFicha(await actualizar(p, { copias: [...p.copias, copia] }));
       } else if (b.hasAttribute("data-corregir-buscar")) {
-        $("#corregir-resultados", d).innerHTML = resultadosHtml(await buscarTmdb($("#corregir-texto", d).value), p.tmdb_id);
+        $("#corregir-resultados", d).innerHTML = resultadosHtml(
+          await buscarTmdb($("#corregir-texto", d).value), p.tmdb_id ? clave(p.tipo, p.tmdb_id) : "");
       } else if (b.hasAttribute("data-eliminar")) {
         if (confirm(`¿Eliminar «${p.titulo}» y todas sus copias?`)) await eliminar(p);
       }
@@ -380,9 +413,9 @@ async function eliminar(p) {
   $("#ficha").close();
 }
 
-/** La ficha era otra película: rellenarla con la elegida, o fusionar copias si ya la teníamos. */
-async function cambiarPelicula(p, tmdbId) {
-  const existente = estado.peliculas.find((x) => x.tmdb_id === tmdbId && x.id !== p.id);
+/** La ficha era otra: rellenarla con la elegida («tipo:id»), o fusionar copias si ya la teníamos. */
+async function cambiarPelicula(p, k) {
+  const existente = buscarPorClave(k, p.id);
   if (existente) {
     const fusionada = await actualizar(existente, { copias: [...existente.copias, ...p.copias] });
     await db.from("peliculas").delete().eq("id", p.id);
@@ -390,7 +423,7 @@ async function cambiarPelicula(p, tmdbId) {
     abrirFicha(fusionada);
     return;
   }
-  const ficha = await fichaTmdb(tmdbId);
+  const ficha = await fichaTmdb(...partir(k));
   abrirFicha(await actualizar(p, { ...ficha, estado: "ok", candidatos: [] }));
 }
 
@@ -401,7 +434,7 @@ function abrirAlta(textoInicial = "") {
   d.innerHTML = `
     <button type="button" class="cerrar" data-cerrar aria-label="Cerrar">×</button>
     <div class="contenido">
-      <h2>Añadir película</h2>
+      <h2>Añadir película o serie</h2>
       <div class="fila-copia" style="margin-top:12px">
         <input id="alta-texto" type="search" placeholder="Título" value="${esc(textoInicial)}" style="margin:0" enterkeyhint="search">
         <button type="button" class="primario mini" data-alta-buscar>Buscar</button>
@@ -428,7 +461,7 @@ function abrirAlta(textoInicial = "") {
     const b = e.target.closest("button");
     if (!b) return;
     if (b.hasAttribute("data-alta-buscar")) buscar();
-    else if (b.dataset.tmdb) elegirAlta(Number(b.dataset.tmdb), b.querySelector("strong").textContent);
+    else if (b.dataset.tmdb) elegirAlta(b.dataset.tmdb, b.querySelector("strong").textContent);
     else if (b.hasAttribute("data-alta-manual")) altaManual($("#alta-texto", d).value.trim());
   };
   $("#alta-texto", d).addEventListener("keydown", (e) => { if (e.key === "Enter") buscar(); });
@@ -441,12 +474,13 @@ function abrirAlta(textoInicial = "") {
 function formularioCopia() {
   return `
     <label>Formato <select name="formato">${opcionesFormato(leerLocal(CLAVE_FORMATO) || "DVD")}</select></label>
-    <label>Notas <input name="notas" placeholder="Edición especial, estantería…"></label>`;
+    <label>Notas <input name="notas" placeholder="Edición: steelbook, inglesa…"></label>
+    <label>Nota interna <input name="nota_interna" placeholder="Solo la ves tú"></label>`;
 }
 
-function elegirAlta(tmdbId, titulo) {
+function elegirAlta(k, titulo) {
   const d = $("#alta");
-  const existente = estado.peliculas.find((p) => p.tmdb_id === tmdbId);
+  const existente = buscarPorClave(k);
   $(".contenido", d).innerHTML = `
     <form id="form-alta">
       <h2>${esc(titulo)}</h2>
@@ -464,7 +498,8 @@ function elegirAlta(tmdbId, titulo) {
   $("#form-alta", d).onsubmit = async (e) => {
     e.preventDefault();
     const f = new FormData(e.target);
-    const copia = { formato: f.get("formato"), notas: f.get("notas").trim() };
+    const copia = { formato: f.get("formato"), notas: f.get("notas").trim(),
+                    nota_interna: f.get("nota_interna").trim() };
     guardarLocal(CLAVE_FORMATO, copia.formato);
     const boton = $("button[type=submit]", d);
     boton.disabled = true;
@@ -473,7 +508,7 @@ function elegirAlta(tmdbId, titulo) {
       if (existente) {
         p = await actualizar(existente, { copias: [...existente.copias, copia] });
       } else {
-        const ficha = await fichaTmdb(tmdbId);
+        const ficha = await fichaTmdb(...partir(k));
         const { data, error } = await db.from("peliculas")
           .insert({ ...ficha, copias: [copia], estado: "ok" }).select().single();
         if (error) throw error;
@@ -515,7 +550,8 @@ function altaManual(titulo) {
       anio: f.get("anio") ? Number(f.get("anio")) : null,
       director: lista(f.get("director")),
       sinopsis: f.get("sinopsis").trim() || null,
-      copias: [{ formato: f.get("formato"), notas: f.get("notas").trim() }],
+      copias: [{ formato: f.get("formato"), notas: f.get("notas").trim(),
+                 nota_interna: f.get("nota_interna").trim() }],
       estado: "manual",
     };
     guardarLocal(CLAVE_FORMATO, fila.copias[0].formato);

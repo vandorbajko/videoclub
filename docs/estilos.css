@@ -322,3 +322,17 @@ button:disabled { opacity: 0.5; cursor: default; }
 
 .fila-copia { display: flex; gap: 8px; }
 .fila-copia select { flex: 0 0 130px; }
+
+/* ---------- Series y notas ---------- */
+.etiqueta-serie {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid var(--borde);
+  color: var(--texto-2);
+}
+.copias .interna { display: block; font-size: 12px; font-style: italic; opacity: 0.8; }
+.copias .interna::before { content: "🔒 "; font-style: normal; }
+.nota-final { margin: 0 0 6px; }

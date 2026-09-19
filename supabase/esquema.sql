@@ -1,9 +1,11 @@
 -- Videoclub: esquema. Pegar entero en Supabase → SQL Editor → Run. Se puede ejecutar más de una vez.
 
--- Una fila por película; sus copias físicas (formato + notas) van dentro, en `copias`.
+-- Una fila por película o serie; sus copias físicas van dentro, en `copias`:
+-- [{formato, notas (públicas), nota_interna (solo con sesión), titulo_hoja}]
 create table if not exists public.peliculas (
   id              bigint generated always as identity primary key,
-  tmdb_id         integer unique,                 -- null en inéditas y pendientes
+  tipo            text not null default 'pelicula' check (tipo in ('pelicula', 'serie')),
+  tmdb_id         integer,                        -- null en inéditas y pendientes
   titulo          text not null,
   titulo_original text,
   anio            integer,
@@ -14,12 +16,13 @@ create table if not exists public.peliculas (
   reparto         text[] not null default '{}',
   sinopsis        text,
   caratula        text,                           -- URL de la imagen
-  copias          jsonb  not null default '[]',   -- [{formato, notas, titulo_hoja}]
+  copias          jsonb  not null default '[]',
   estado          text   not null default 'ok'
                   check (estado in ('ok', 'comprobar', 'pendiente', 'manual')),
   candidatos      jsonb  not null default '[]',   -- alternativas de TMDB para revisar
   creada          timestamptz not null default now(),
-  actualizada     timestamptz not null default now()
+  actualizada     timestamptz not null default now(),
+  constraint peliculas_tipo_tmdb_id_key unique (tipo, tmdb_id)
 );
 
 create or replace function public.tocar_actualizada() returns trigger

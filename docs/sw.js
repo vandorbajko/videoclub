@@ -1,6 +1,6 @@
 // La aplicación y las carátulas vistas quedan en el móvil para consultar sin cobertura.
 // Los datos del catálogo los guarda app.js en localStorage.
-const APP = "videoclub-app-v1";
+const APP = "videoclub-app-v2";
 const CARATULAS = "videoclub-caratulas-v1";
 const ARCHIVOS = ["./", "index.html", "estilos.css", "app.js", "config.js", "manifest.webmanifest", "icono.svg"];
 
