@@ -239,22 +239,30 @@ NUMEROS = {"uno": "1", "dos": "2", "tres": "3", "cuatro": "4", "cinco": "5", "se
            "vi": "6", "vii": "7", "viii": "8", "ix": "9", "x": "10"}
 
 
+def cifras(texto):
+    """«hora punta iii» → «hora punta 3»: los números se comparan siempre en cifras."""
+    return " ".join(NUMEROS.get(w, w) for w in texto.split())
+
+
 def numeros(texto):
     """{"4"} para «Rocky IV», {"3"} para «Tres solteros»: distingue secuelas."""
-    return {NUMEROS.get(w, w) for w in texto.split() if w.isdigit() or w in NUMEROS}
+    return {w for w in cifras(texto).split() if w.isdigit()}
 
 
-def puntuar(c, consulta, p):
+def puntuar(c, consulta, p, mirar_numeros=True):
     """0..1: parecido del título (español u original) y encaje con el año de las pistas."""
-    t = normalizar(consulta)
+    t = cifras(normalizar(consulta))
     parecido = 0
-    for nombre in (normalizar(c.get("title")), normalizar(c.get("original_title"))):
+    for nombre in (cifras(normalizar(c.get("title"))), cifras(normalizar(c.get("original_title")))):
         esta = SequenceMatcher(None, t, nombre).ratio()
         palabras = set(t.split()) - {"y", "and"}
-        if len(palabras) >= 2 and palabras <= set(nombre.split()):
-            esta = max(esta, 0.88)  # título abreviado en la hoja
-        if numeros(t) != numeros(nombre):
-            esta *= 0.8  # «Rocky V» no es «Rocky IV»; «Fast & Furious» no es la 7
+        if palabras <= set(nombre.split()):  # título abreviado en la hoja
+            esta = max(esta, 0.88 if len(palabras) >= 2 else 0.86)
+        if mirar_numeros and numeros(t) != numeros(nombre):
+            # «Rocky V» no es «Rocky IV». Si la hoja pone número y la candidata no,
+            # casi siempre es la equivocada («Hora punta 3» no es «Hora punta»); al revés
+            # da igual, porque el número del título español no siempre se escribe en la hoja.
+            esta *= 0.8 if numeros(t) and numeros(nombre) else 0.85 if numeros(t) else 0.97
         parecido = max(parecido, esta)
     ano = ano_de(c)
     if ano and p["anio"]:
@@ -289,7 +297,9 @@ def coincidencias(palabras, nombres):
 def buscar(titulo, p):
     """Devuelve (candidato elegido o None, dudosa, candidatos ordenados)."""
     tipos = ["serie", "pelicula"] if p["serie"] else ["pelicula", "serie"]
-    puntos, por_clave = {}, {}
+    # Dos puntuaciones: mirando los números de secuela y sin mirarlos. La segunda se usa solo
+    # si con la primera no encaja nada, para «Piratas del caribe 3 En el fin del mundo».
+    puntos, sin_numeros, por_clave = {}, {}, {}
 
     def probar(consulta, tipo, contra=None, peso=1.0):
         params = {"query": consulta, "language": "es-ES"}
@@ -302,7 +312,9 @@ def buscar(titulo, p):
             c = unificar(bruto, tipo)
             clave = (tipo, c["id"])
             por_clave.setdefault(clave, c)
-            puntos[clave] = max(puntos.get(clave, 0), peso * puntuar(c, contra or consulta, p))
+            texto = contra or consulta
+            puntos[clave] = max(puntos.get(clave, 0), peso * puntuar(c, texto, p))
+            sin_numeros[clave] = max(sin_numeros.get(clave, 0), peso * puntuar(c, texto, p, False))
 
     mejor = lambda: max(puntos.values(), default=0)
     for tipo in tipos:
@@ -318,6 +330,9 @@ def buscar(titulo, p):
                 probar(" ".join(palabras[:i] + palabras[i + 1:]), tipos[0], contra=titulo)
                 if mejor() >= UMBRAL:
                     break
+
+    if mejor() < UMBRAL and max(sin_numeros.values(), default=0) >= UMBRAL:
+        puntos = sin_numeros
 
     candidatos = sorted(por_clave.values(), key=lambda c: -puntos[(c["tipo"], c["id"])])
     punto = lambda c: puntos[(c["tipo"], c["id"])]
@@ -335,8 +350,9 @@ def buscar(titulo, p):
         aciertos = {id(c): coincidencias(palabras, creditos(c)) for c in buenas}
         maximo = max(aciertos.values(), default=0)
         if maximo:
-            empatados = [c for c in buenas if aciertos[id(c)] == maximo]
-            resuelta = len(empatados) == 1
+            empatados = sorted((c for c in buenas if aciertos[id(c)] == maximo), key=lambda c: -punto(c))
+            # Si además una encaja bastante mejor por título, no hay nada que comprobar.
+            resuelta = len(empatados) == 1 or punto(empatados[0]) - punto(empatados[1]) >= 0.05
         elif p["palabras"]:
             sospechosa = True  # las notas internas nombran a alguien que no sale en ninguna
     if len(empatados) > 1 and p["orden"]:
